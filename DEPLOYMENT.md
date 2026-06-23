@@ -25,12 +25,19 @@ Use this when you do not want to connect GitHub yet.
 
 ## Option B - Netlify from Git
 
-1. Push this folder to a GitHub repository.
+The project has been pushed to:
+
+```text
+https://github.com/Tanh2k8-123/Tanh-amazon
+```
+
+1. Log in to Netlify with the same GitHub account or connect GitHub from Netlify.
 2. Create a new Netlify site from Git.
-3. Use:
+3. Select repository: `Tanh2k8-123/Tanh-amazon`.
+4. Use:
    - Build command: empty
    - Publish directory: `site`
-4. Deploy.
+5. Deploy.
 
 ## Option C - Cloudflare Pages
 

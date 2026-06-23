@@ -21,6 +21,31 @@ Last updated: 2026-06-23
 
 Public contact email hien tai: `dotuananh20082006@gmail.com`.
 
+GitHub repo da day len:
+
+```text
+https://github.com/Tanh2k8-123/Tanh-amazon
+```
+
+## Cach de nhat luc nay: Netlify tu GitHub
+
+1. Dang nhap Netlify bang GitHub.
+2. Chon "Add new site" -> "Import an existing project".
+3. Chon GitHub repo `Tanh2k8-123/Tanh-amazon`.
+4. Cau hinh:
+   - Build command: de trong.
+   - Publish directory: `site`.
+5. Deploy.
+6. Copy public URL Netlify tao ra.
+7. Chay lenh nay trong PowerShell, thay URL that:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\prepare-launch.ps1 -PublicUrl "https://final-public-url" -ContactEmail "dotuananh20082006@gmail.com"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
+```
+
+8. Commit va push thay doi sitemap/robots sau khi chay lenh tren.
+
 ## Khuyen nghi launch nhanh voi Netlify Free
 
 Day la cach don gian nhat khi chua muon dung GitHub.

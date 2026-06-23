@@ -19,6 +19,7 @@ Last updated: 2026-06-23
 | Content audit | Ready locally | `working/audits/content_inventory.csv` and `working/audits/content_improvement_priorities.md` exist. |
 | Launch handoff | Ready locally | `working/deploy/LAUNCH_HANDOFF.md` exists. |
 | Launch status script | Ready locally | `scripts/launch-status.ps1` reports the remaining launch blockers. |
+| GitHub repository | Ready | Pushed to `https://github.com/Tanh2k8-123/Tanh-amazon` on branch `main`. |
 | Contact email | Ready locally | `site/contact/index.html` uses `dotuananh20082006@gmail.com`. |
 | Public deploy | Blocked by missing host/account step | Need Netlify Free or Cloudflare Pages Free deployment and final public URL. |
 | Search Console | Not started | Requires public URL. |
