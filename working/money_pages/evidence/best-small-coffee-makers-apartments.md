@@ -65,3 +65,8 @@
 - Verify Amazon US eligibility only after Associates approval.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
 - Re-score candidates after checking real apartment workflows: counter width, cabinet clearance, mug height, filter/pod storage, water access, noise, and cleanup.
+
+## Verification Attempts
+
+- 2026-06-24: Keurig product page remained accessible and confirmed the K-Mini product/highlights, but no cleaning/descaling details were visible in the text extraction.
+- 2026-06-24: Keurig Support rendered as a blank JavaScript app in the browser pass, and guessed Keurig DAM manual URLs for the K-Mini use/care guide returned 404 pages. Keep the cleaning/descaling support detail as outstanding until an official manual or support article is found.
