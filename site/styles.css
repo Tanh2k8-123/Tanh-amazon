@@ -223,7 +223,7 @@ a:hover {
 .research-note {
   position: absolute;
   right: 24px;
-  bottom: -28px;
+  bottom: 24px;
   width: min(360px, calc(100% - 48px));
   overflow: hidden;
   border: 1px solid var(--line);
