@@ -30,6 +30,8 @@ https://tanhamazon.netlify.app
 
 ## Day 1 - Search Console
 
+- [x] Prepare `working/search_console_day0_checklist.md`.
+- [x] Prepare `working/tracking/indexing_tracker.csv` with all 29 public URLs.
 - [ ] Add URL-prefix property.
 - [ ] Verify ownership.
 - [ ] Submit sitemap.

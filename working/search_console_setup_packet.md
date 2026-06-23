@@ -109,6 +109,15 @@ Use:
 - `working/tracking/search_console_weekly_kpi.csv`
 - `working/tracking/indexing_tracker.csv`
 - `working/tracking/content_log.csv`
+- `working/search_console_day0_checklist.md`
+
+## Official References
+
+- Google Search Console overview: https://developers.google.com/search/docs/monitor-debug/search-console-start
+- Google sitemap overview: https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview
+- Google Sitemaps report: https://support.google.com/webmasters/answer/7451001
+- Google URL Inspection tool: https://support.google.com/webmasters/answer/9012289
+- Google request recrawl guidance: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
 
 ## First 30-Day KPI Targets
 

@@ -22,6 +22,10 @@
 - Local QA completed for desktop/mobile views.
 - Local Git repository initialized.
 - Deploy ZIP created at `working/deploy/tanhs-compact-kitchen-site.zip`.
+- GitHub repository pushed to `https://github.com/Tanh2k8-123/Tanh-amazon`.
+- Public Netlify site launched at `https://tanhamazon.netlify.app`.
+- Public verification passed for 29 sitemap URLs.
+- Search Console day 0 checklist created and indexing tracker expanded to all 29 public URLs.
 
 ## Search Console
 
@@ -31,7 +35,7 @@
 - Top query: not available yet.
 - Top page: not available yet.
 
-Reason: site has not been deployed publicly and Search Console is not connected yet.
+Reason: public site is live, but Search Console has not been connected yet.
 
 ## Affiliate
 
@@ -40,23 +44,25 @@ Reason: site has not been deployed publicly and Search Console is not connected 
 - Ordered items: 0.
 - Qualifying sales: 0.
 
-Reason: Amazon Associates has not been applied for yet. This is intentional until the public site has enough original content.
+Reason: Amazon Associates has not been applied for yet. This is intentional until Search Console setup, final compliance review, and first money-page evidence planning are done.
 
 ## What worked
 
 - Static-first architecture fits the zero-budget constraint.
 - Informational content avoids thin affiliate risk before product evidence exists.
 - Local QA found and fixed responsive table overflow.
+- Netlify/GitHub deployment now works with the zero-budget constraint.
+- Public verification caught and confirmed sitemap, robots, contact, and disclosure basics.
 
 ## What did not work yet
 
-- Public deployment is waiting on host choice.
-- Contact page still uses placeholder email.
-- Search Console and GA4 cannot be connected until deployment.
+- Search Console still requires a Google account login and property setup.
+- GA4 is intentionally deferred until analytics privacy language is needed.
+- Amazon Associates is intentionally deferred until live-site review and product evidence are ready.
 
 ## Next week priorities
 
-1. Replace public contact email.
-2. Deploy to Netlify Free or Cloudflare Pages Free.
-3. Update sitemap/robots to final URL and submit sitemap in Search Console.
+1. Create Search Console URL-prefix property for `https://tanhamazon.netlify.app/`.
+2. Submit `https://tanhamazon.netlify.app/sitemap.xml`.
+3. Inspect P0 URLs and update `working/tracking/indexing_tracker.csv`.
 4. Research product evidence for compact air fryer, dish rack, and small coffee maker best-list pages.

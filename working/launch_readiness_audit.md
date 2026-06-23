@@ -53,6 +53,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.p
 
 - `working/amazon_associates_application_packet.md`
 - `working/search_console_setup_packet.md`
+- `working/search_console_day0_checklist.md`
 - `working/post_launch_week_1_runbook.md`
 - `working/tracking/search_console_weekly_kpi.csv`
 - `working/tracking/indexing_tracker.csv`
@@ -66,6 +67,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.p
 - Create URL-prefix property: `https://tanhamazon.netlify.app/`
 - Submit sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
 - Inspect the first priority URLs in `working/search_console_setup_packet.md`.
+- Use `working/search_console_day0_checklist.md` as the click-by-click checklist.
 
 ## Content Audit Snapshot
 

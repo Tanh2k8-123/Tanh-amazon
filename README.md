@@ -39,6 +39,7 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 - Launch status script: `scripts/launch-status.ps1`
 - Amazon application packet: `working/amazon_associates_application_packet.md`
 - Search Console packet: `working/search_console_setup_packet.md`
+- Search Console day 0 checklist: `working/search_console_day0_checklist.md`
 - Post-launch week 1 runbook: `working/post_launch_week_1_runbook.md`
 - Launch handoff: `working/deploy/LAUNCH_HANDOFF.md`
 - Public launch verification: `working/public_launch_verification.md`

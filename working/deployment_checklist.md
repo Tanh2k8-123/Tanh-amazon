@@ -91,7 +91,7 @@
 - [ ] Add Search Console property for final URL.
 - [ ] Submit sitemap.
 - [ ] Use `working/search_console_setup_packet.md` for first URL inspection batch.
-- [ ] Start `working/tracking/indexing_tracker.csv`.
-- [ ] Start `working/tracking/search_console_weekly_kpi.csv`.
+- [x] Start `working/tracking/indexing_tracker.csv`.
+- [x] Start `working/tracking/search_console_weekly_kpi.csv`.
 - [ ] Add GA4 only if privacy policy matches the analytics setup.
 - [ ] Do not apply Amazon Associates until Search Console setup and final compliance review are done.
