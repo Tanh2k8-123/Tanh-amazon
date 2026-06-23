@@ -244,13 +244,13 @@ a:hover {
   padding: 11px 12px;
   border-bottom: 1px solid var(--line);
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   line-height: 1.35;
 }
 
 .research-note th:first-child,
 .research-note td:first-child {
-  width: 30%;
+  width: 96px;
   white-space: nowrap;
 }
 
