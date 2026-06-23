@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanhs-compact-kitchen.netlify.app/sitemap.xml
