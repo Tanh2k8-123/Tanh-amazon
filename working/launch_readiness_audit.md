@@ -17,6 +17,7 @@ Last updated: 2026-06-23
 | Search Console packet | Ready locally | `working/search_console_setup_packet.md` exists. |
 | Post-launch runbook | Ready locally | `working/post_launch_week_1_runbook.md` exists. |
 | Content audit | Ready locally | `working/audits/content_inventory.csv` and `working/audits/content_improvement_priorities.md` exist. |
+| Money-page evidence planning | Ready locally | `working/money_pages/` contains the SOP, pipeline, and evidence tracker for the first 5 buyer-intent pages. |
 | Launch handoff | Ready locally | `working/deploy/LAUNCH_HANDOFF.md` exists. |
 | Launch status script | Ready locally | `scripts/launch-status.ps1` reports the remaining launch blockers. |
 | GitHub repository | Ready | Pushed to `https://github.com/Tanh2k8-123/Tanh-amazon` on branch `main`. |
@@ -61,6 +62,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.p
 - `working/audits/content_improvement_priorities.md`
 - `working/deploy/LAUNCH_HANDOFF.md`
 - `working/public_launch_verification.md`
+- `working/money_pages/MONEY_PAGE_SOP.md`
+- `working/money_pages/money_page_pipeline.csv`
+- `working/money_pages/evidence/product_evidence_tracker.csv`
+- `working/money_pages/affiliate_readiness_snapshot.md`
 
 ## Search Console Next
 

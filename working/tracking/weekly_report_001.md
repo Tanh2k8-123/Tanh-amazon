@@ -26,6 +26,7 @@
 - Public Netlify site launched at `https://tanhamazon.netlify.app`.
 - Public verification passed for 29 sitemap URLs.
 - Search Console day 0 checklist created and indexing tracker expanded to all 29 public URLs.
+- Money-page evidence SOP, pipeline, and evidence tracker created for the first 5 buyer-intent pages.
 
 ## Search Console
 

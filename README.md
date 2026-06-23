@@ -22,6 +22,7 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 | `working/tracking/` | CSV/Markdown tracking files |
 | `working/qa/` | QA report and local screenshots |
 | `working/deploy/` | Deploy ZIP generated from `site/` |
+| `working/money_pages/` | Evidence planning for future buyer-intent affiliate pages |
 | `scripts/` | Launch preparation and static-site verification scripts |
 
 ## Current launch state
@@ -43,6 +44,8 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 - Post-launch week 1 runbook: `working/post_launch_week_1_runbook.md`
 - Launch handoff: `working/deploy/LAUNCH_HANDOFF.md`
 - Public launch verification: `working/public_launch_verification.md`
+- Money page SOP: `working/money_pages/MONEY_PAGE_SOP.md`
+- Affiliate readiness snapshot: `working/money_pages/affiliate_readiness_snapshot.md`
 - Content audit outputs: `working/audits/content_inventory.csv`, `working/audits/content_improvement_priorities.md`
 - No Amazon affiliate links yet
 

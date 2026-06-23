@@ -12,7 +12,7 @@ Reason:
 
 - Search Console is not connected yet.
 - There are no affiliate links yet, which is intentional.
-- Product evidence for the first money pages has not been collected yet.
+- Product evidence templates are ready, but real product evidence has not been collected yet.
 
 Apply only after Search Console is submitted, the live site has had a final compliance review, and the first money-page evidence plan is ready.
 
@@ -30,6 +30,9 @@ Apply only after Search Console is submitted, the live site has had a final comp
 - [x] No copied Amazon product images, prices, star ratings, or customer review text.
 - [x] Traffic plan is written even if traffic is still early.
 - [x] 180-day plan is ready.
+- [x] Money-page evidence templates are ready.
+- [ ] Product evidence has been collected for first money pages.
+- [ ] `scripts/audit-affiliate-readiness.ps1` has been run after Search Console setup.
 
 ## Application Fields
 
@@ -109,6 +112,13 @@ Do not publish these as affiliate pages until product evidence is collected.
 | 3 | Best small coffee makers for apartments | Brew type, counter footprint, water access, cleaning, noise. |
 | 4 | Best compact rice cookers for two people | Capacity definitions, pot cleaning, lid clearance, keep-warm notes. |
 | 5 | Best sink organizers for small kitchens | Drainage, airflow, sponge/brush fit, footprint, cleaning. |
+
+Evidence templates:
+
+- `working/money_pages/MONEY_PAGE_SOP.md`
+- `working/money_pages/money_page_pipeline.csv`
+- `working/money_pages/evidence/product_evidence_tracker.csv`
+- `working/money_pages/affiliate_readiness_snapshot.md`
 
 ## First 180-Day Goal
 
