@@ -38,8 +38,8 @@ Local content, compliance scaffolding, and evidence planning are ready. Across t
 2. Extract exact Instant Pot and Ninja manual clearance notes before publishing the compact air fryer money page.
 3. Confirm current availability and Amazon US eligibility for dish rack finalists after Associates approval.
 4. Extract Keurig K-Mini cleaning/descaling support details before publishing the small coffee maker money page.
-5. Extract exact Aroma and GreenLife cleaning/dishwasher guidance before publishing the compact rice cooker money page.
-6. Replace remaining public testing sources with official or retailer sources for OXO and simplehuman sink organizer candidates before publishing.
+5. Replace remaining public testing sources with official or retailer sources for OXO and simplehuman sink organizer candidates before publishing.
+6. Confirm current availability from allowed sources immediately before drafting money pages.
 7. Run `scripts\audit-affiliate-readiness.ps1` again.
 8. Do a final live-site compliance review.
 9. Apply to Amazon Associates only after the above is complete.

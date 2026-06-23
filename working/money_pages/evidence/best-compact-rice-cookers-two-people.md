@@ -31,8 +31,8 @@
 | Zojirushi NS-LGC05 Micom 3-Cup | Up to 3 cups / 0.54 L raw short-grain rice | Official page lists dimensions and says it can cook as little as 1/2 cup rice or oats. | Removable steam vent cap and detachable washable inner lid. | Source documented |
 | Zojirushi NHS-06 Rice Cooker / Steamer | Up to 3 cups / 0.6 L raw short-grain rice | Official page lists very compact dimensions; manual brown rice chart caps NHS-06 at 1-2 cups. | Nonstick inner pan and glass lid; simple one-switch workflow. | Source documented |
 | Dash Mini Rice Cooker | 2 cups fully cooked rice | Manufacturer page positions it for small spaces; retailer source lists dimensions. | Removable nonstick pot, glass lid, keep-warm function. | Source documented |
-| Aroma ARC-914SBD Digital Rice & Grain Multicooker | 2-8 cups cooked rice | Manufacturer page calls it compact; retailer source lists 10-inch cube-like footprint. | Ceramic nonstick pot; manual/dishwasher details still need final extraction. | Source documented |
-| GreenLife Go Grains 4-Cup Rice Cooker | 4 cups cooked rice | Official page lists dimensions, weight, cord length, and grain presets. | Ceramic nonstick coating; PFAS/PFOA/lead/cadmium-free coating claim. | Source documented |
+| Aroma ARC-914SBD Digital Rice & Grain Multicooker | 2-8 cups cooked rice | Official page lists 9.3 x 8.6 x 8.5 in dimensions and compact 8-cup cooked capacity. | Official manual allows top-rack dishwasher cleaning for the inner pot/accessories and says to hand wash the inner lid and condensation collector. | Source documented |
+| GreenLife Go Grains 4-Cup Rice Cooker | 4 cups cooked rice | Official page lists dimensions, weight, cord length, wattage, and grain presets. | Ceramic nonstick coating; official page says parts are dishwasher-safe and links the care/use manual. | Source documented |
 | Cuckoo CR-0375F 3-Cup Micom | 3 cups uncooked / 6 cups cooked | Official page lists portion size and warranty; retailer source adds dimensions. | Nonstick inner pot, removable lid, auto-clean/manual source evidence. | Source documented |
 | Tiger JAJ-A55U 3-Cup Micom | 3 cups uncooked | Official manual gives measuring cup basis; retailer source gives dimensions. | Manual covers steam cap, steam vent, inner pan, and cleaning workflow. | Hold - availability check needed |
 
@@ -45,8 +45,9 @@
 - Dash Mini Rice Cooker product page: `https://bydash.com/products/mini-rice-cooker`
 - Dash dimensions source: `https://www.target.com/p/dash-2-cup-electric-mini-rice-cooker-graphite/-/A-85378064`
 - Aroma ARC-914SBD product page: `https://www.aromaco.com/product/digital-rice-grain-multicooker-arc-914sbd/`
-- Aroma dimensions source: `https://www.bestbuy.com/product/aroma-8-cup-rice-cooker-steamer-black-silver/J72972HZQ4`
+- Aroma ARC-914SBD manual: `https://www.aromaco.com/wp-content/uploads/2021/08/ARC-914SBD_0024.pdf`
 - GreenLife Go Grains Rice Cooker: `https://www.greenlife-cookware.com/products/go-grains-rice-cooker`
+- GreenLife Go Grains care/use manual: `https://cdn.shopify.com/s/files/1/0444/7109/1363/files/1400027243-GL_Rice_Grains_Cooker_-_C_U-231222nf-R2.pdf?v=1707148965`
 - Cuckoo CR-0375F product page: `https://www.cuckoomallusa.com/products/cr-0375f`
 - Cuckoo CR-0375F manual: `https://www.cuckoousastore.com/e-manual/CR-0375FW.pdf`
 - Tiger JAJ-A55U manual: `https://tiger-corporation-us.com/wp-content/uploads/2017/06/JAJ_A55U-English.pdf`
@@ -62,8 +63,12 @@
 
 ## Outstanding Evidence Before Publication
 
-- Extract exact manual cleaning and dishwasher guidance for Aroma and GreenLife.
 - Confirm current availability from allowed sources immediately before drafting.
 - Verify Amazon US eligibility only after Associates approval.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
 - Re-score candidates after checking real two-person workflows: one-cup batch, two-cup batch, leftover batch, lid clearance, steam vent direction, pot coating, cord storage, and cabinet fit.
+
+## Verification Notes
+
+- 2026-06-24: Aroma official product page and manual now cover exact official dimensions, dishwasher/top-rack guidance for the inner pot and accessories, removable inner lid/condensation collector cleaning, and dry-pot safety note.
+- 2026-06-24: GreenLife official product page now covers dishwasher-safe parts and links the care/use manual.
