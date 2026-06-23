@@ -222,9 +222,10 @@ a:hover {
 
 .research-note {
   position: absolute;
-  right: -18px;
+  right: 24px;
   bottom: -28px;
-  width: min(320px, 74%);
+  width: min(360px, calc(100% - 48px));
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 253, 247, 0.96);
@@ -234,6 +235,7 @@ a:hover {
 .research-note table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
   font-size: 13px;
 }
 
@@ -242,6 +244,14 @@ a:hover {
   padding: 11px 12px;
   border-bottom: 1px solid var(--line);
   text-align: left;
+  vertical-align: middle;
+  line-height: 1.35;
+}
+
+.research-note th:first-child,
+.research-note td:first-child {
+  width: 30%;
+  white-space: nowrap;
 }
 
 .research-note th {

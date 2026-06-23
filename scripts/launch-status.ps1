@@ -25,12 +25,13 @@ $sitemapHosts = @()
 $sitemapUsesPlaceholderHost = $false
 if (Test-Path -LiteralPath $sitemapPath) {
   $sitemapXml = [xml](Get-Content -LiteralPath $sitemapPath -Raw)
-  $sitemapUrls = @($sitemapXml.urlset.url)
+  $sitemapUrls = @($sitemapXml.GetElementsByTagName('url'))
+  $sitemapLocs = @($sitemapXml.GetElementsByTagName('loc') | ForEach-Object { $_.InnerText })
   $sitemapUrlCount = $sitemapUrls.Count
   $sitemapHosts = @(
-    $sitemapUrls |
+    $sitemapLocs |
       ForEach-Object {
-        try { ([uri]([string]$_.loc)).Host } catch { $null }
+        try { ([uri]([string]$_)).Host } catch { $null }
       } |
       Where-Object { $_ } |
       Sort-Object -Unique

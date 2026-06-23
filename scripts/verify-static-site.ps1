@@ -70,17 +70,22 @@ if (-not $AllowLaunchPlaceholders -and $contactText -match 'hello@example\.com')
 $robotsText = Get-Content -LiteralPath (Join-Path $sitePath 'robots.txt') -Raw
 $sitemapText = Get-Content -LiteralPath (Join-Path $sitePath 'sitemap.xml') -Raw
 $sitemapXml = [xml]$sitemapText
-$sitemapUrls = @($sitemapXml.urlset.url)
+$sitemapUrls = @($sitemapXml.GetElementsByTagName('url'))
+$sitemapLocs = @($sitemapXml.GetElementsByTagName('loc') | ForEach-Object { $_.InnerText })
 
 if ($sitemapUrls.Count -ne $htmlFiles.Count) {
   Add-Error "Sitemap URL count ($($sitemapUrls.Count)) does not match HTML file count ($($htmlFiles.Count))."
+}
+
+if ($sitemapText -notmatch '<urlset\s+xmlns="http://www\.sitemaps\.org/schemas/sitemap/0\.9"') {
+  Add-Error 'sitemap.xml does not use the standard sitemaps.org namespace.'
 }
 
 if ($robotsText -notmatch 'Sitemap:\s+(https://[^\s]+/sitemap\.xml)') {
   Add-Error 'robots.txt does not contain a valid https sitemap URL.'
 } else {
   $robotsSitemap = $Matches[1]
-  $firstSitemapUrl = [string]$sitemapUrls[0].loc
+  $firstSitemapUrl = [string]$sitemapLocs[0]
   $robotsBase = $robotsSitemap -replace '/sitemap\.xml$', ''
   $sitemapBase = $firstSitemapUrl.TrimEnd('/')
   if (-not $sitemapBase.StartsWith($robotsBase, [System.StringComparison]::OrdinalIgnoreCase)) {
@@ -88,7 +93,7 @@ if ($robotsText -notmatch 'Sitemap:\s+(https://[^\s]+/sitemap\.xml)') {
   }
 }
 
-if ($sitemapUrls | Where-Object { -not ([string]$_.loc).StartsWith('https://') }) {
+if ($sitemapLocs | Where-Object { -not ([string]$_).StartsWith('https://') }) {
   Add-Error 'Sitemap contains non-https URLs.'
 }
 

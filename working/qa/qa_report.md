@@ -51,6 +51,7 @@ C:\Program Files\Google\Chrome\Application\chrome.exe
 | Mobile portable induction guide | `working/qa/portable-induction-guide-mobile.png` |
 | Mobile counter organization guide | `working/qa/counter-organization-guide-mobile.png` |
 | Mobile affiliate disclosure after compliance-label update | `working/qa/affiliate-disclosure-mobile-v2.png` |
+| Desktop homepage after hero label alignment fix | `working/qa/home-hero-label-fix-desktop.png` |
 
 ## Checks passed
 
@@ -86,6 +87,7 @@ C:\Program Files\Google\Chrome\Application\chrome.exe
 - The latest five pages were smoke-tested through Playwright/Chrome on desktop and mobile with HTTP 200, no console errors, no horizontal overflow, one H1 each, and 3 article links each.
 - The final five shorter pages were expanded with article-body related links, bringing the audited source-ready count to 20 logged content pages and reducing the expansion queue to 0.
 - The final five pages were smoke-tested through Playwright/Chrome on desktop and mobile with HTTP 200, no console errors, no horizontal overflow, one H1 each, and at least 3 article links each.
+- Homepage hero label alignment was smoke-tested after the research-note fix: HTTP 200, no console errors, no horizontal overflow, overlay contained within the hero image edge, and the wrapped `Storage` row label vertically aligned with its description.
 
 ## Visual comparison notes
 

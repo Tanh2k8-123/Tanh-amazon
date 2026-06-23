@@ -63,7 +63,8 @@ $robotsText = [regex]::Replace($robotsText, 'Sitemap:\s+https?://[^\s]+/sitemap\
 Write-TextFileUtf8NoBom -Path $robotsPath -Text $robotsText
 
 $sitemapText = Get-Content -LiteralPath $sitemapPath -Raw
-$sitemapText = [regex]::Replace($sitemapText, 'https?://[^/]+', $baseUrl)
+$sitemapText = [regex]::Replace($sitemapText, '<urlset\s+xmlns="[^"]+">', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+$sitemapText = [regex]::Replace($sitemapText, '(<loc>)https?://[^/]+', "`$1$baseUrl")
 Write-TextFileUtf8NoBom -Path $sitemapPath -Text $sitemapText
 
 $zipDirectory = Split-Path -Parent $zipFullPath
@@ -71,7 +72,7 @@ New-Item -ItemType Directory -Force -Path $zipDirectory | Out-Null
 Compress-Archive -Path (Join-Path $sitePath '*') -DestinationPath $zipFullPath -Force
 
 $htmlCount = (Get-ChildItem -LiteralPath $sitePath -Recurse -Filter *.html | Measure-Object).Count
-$sitemapUrlCount = ([xml](Get-Content -LiteralPath $sitemapPath -Raw)).urlset.url.Count
+$sitemapUrlCount = ([xml](Get-Content -LiteralPath $sitemapPath -Raw)).GetElementsByTagName('url').Count
 $zipBytes = (Get-Item -LiteralPath $zipFullPath).Length
 
 [pscustomobject]@{
