@@ -63,3 +63,9 @@
 - Verify Amazon US eligibility only after Associates approval.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
 - Re-score candidates after testing real sink layouts: shallow sink, deep sink, faucet shape, suction surface, brush height, soap bottle fit, airflow, and cleaning access.
+
+## Verification Attempts
+
+- 2026-06-24: OXO StrongHold direct product URL in the tracker returned an OXO 404 page; Target search loaded only placeholder results in the browser pass, so the candidate stays `Needs official verification`.
+- 2026-06-24: OXO Stainless Steel Sink Caddy still needs an official or retailer product page before publication; do not rely only on public testing or marketplace-context articles.
+- 2026-06-24: simplehuman direct product URL in the tracker returned a 404 page; Wayfair search triggered a bot challenge, so the candidate stays `Needs official verification`.
