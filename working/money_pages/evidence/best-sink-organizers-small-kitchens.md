@@ -29,12 +29,12 @@
 | Candidate | Style | Fit evidence | Drainage / cleaning evidence | Evidence status |
 | --- | --- | --- | --- | --- |
 | Umbra Sling Sink Caddy | Faucet/sink-wall flexible caddy | Official page lists dimensions and says it bends around faucet necks or sink walls. | Perforated base improves drainage; rinse with warm soapy water. | Source documented |
-| OXO StrongHold Suction Sinkware Organizer | In-sink suction caddy | Public testing source lists width/height and in-sink placement; official verification still needed. | Drainage slots, dishwasher-friendly claim, strong suction in testing source. | Source documented, verify official source |
-| OXO Good Grips Stainless Steel Sink Caddy | Countertop caddy | Public source lists compact dimensions and divided storage. | Removable perforated drip tray with spout; verify official dimensions before publication. | Source documented, verify official source |
-| simplehuman Sink Caddy Sponge Holder | In-sink suction caddy | Public owner/testing source lists full and slim size dimensions. | Ventilation holes, manual cleaning, rust-proof stainless-steel claim; verify official source before publication. | Source documented, verify official source |
-| Joseph Joseph Surface Sink Caddy | Countertop caddy | Public testing source lists compact dimensions and compartments. | Sloped base, grippy base, dishwasher-safe claim; verify official product page before publication. | Source documented, verify official source |
-| Full Circle Stash Ceramic Sink Caddy | Countertop ceramic caddy | Public testing source lists compact dimensions and modular parts. | Open ventilation; water can collect underneath; official page needed before shortlist. | Source documented, verify official source |
-| Yamazaki Home Tower Faucet Hanging Sponge Caddy | Faucet-hanging caddy | Public testing source lists dimensions and steel/silicone material. | Open slatted drying; not dishwasher-safe claim; verify official product page before publication. | Source documented, verify official source |
+| OXO StrongHold Suction Sinkware Organizer | In-sink suction caddy | Public testing source lists width/height and in-sink placement; official verification still needed. | Drainage slots, dishwasher-friendly claim, strong suction in testing source. | Needs official verification |
+| OXO Good Grips Stainless Steel Sink Caddy | Countertop caddy | Public source lists compact dimensions and divided storage. | Removable perforated drip tray with spout; verify official dimensions before publication. | Needs official verification |
+| simplehuman Sink Caddy Sponge Holder | In-sink suction caddy | Public owner/testing source lists full and slim size dimensions. | Ventilation holes, manual cleaning, rust-proof stainless-steel claim; verify official source before publication. | Needs official verification |
+| Joseph Joseph Surface Sink Caddy | Countertop caddy | Public testing source lists compact dimensions and compartments. | Sloped base, grippy base, dishwasher-safe claim; verify official product page before publication. | Needs official verification |
+| Full Circle Stash Ceramic Sink Caddy | Countertop ceramic caddy | Public testing source lists compact dimensions and modular parts. | Open ventilation; water can collect underneath; official page needed before shortlist. | Needs official verification |
+| Yamazaki Home Tower Faucet Hanging Sponge Caddy | Faucet-hanging caddy | Public testing source lists dimensions and steel/silicone material. | Open slatted drying; not dishwasher-safe claim; verify official product page before publication. | Needs official verification |
 
 ## Official / Reliable Source URLs
 
@@ -50,6 +50,7 @@
 
 - Do not call these recommendations yet. They are candidates only.
 - First-pass finalist set for further verification: Umbra Sling, OXO StrongHold, Joseph Joseph Surface, Yamazaki faucet caddy, simplehuman Sink Caddy.
+- Only Umbra is source-documented from an official product page in this pass. The other sink-organizer candidates are useful research leads, not publish-ready finalists.
 - Because several sink-caddy facts currently rely on public testing sources, pull official or retailer product pages before publishing a final best-list.
 - Do not use Amazon images, prices, star ratings, review snippets, or seller copy.
 
