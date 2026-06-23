@@ -2,24 +2,31 @@
 
 Use this after the site is publicly deployed and the final URL is known.
 
+Public URL:
+
+```text
+https://tanhamazon.netlify.app
+```
+
 ## Day 0 - Finalize Launch Files
 
-- [ ] Run `scripts/prepare-launch.ps1` with final URL and public email.
-- [ ] Run `scripts/verify-static-site.ps1`.
-- [ ] Confirm `hello@example.com` is gone.
-- [ ] Confirm `site/robots.txt` points to final sitemap URL.
-- [ ] Confirm every `site/sitemap.xml` URL uses the final public URL.
-- [ ] Deploy updated `site/` or `working/deploy/tanhs-compact-kitchen-site.zip`.
+- [x] Run `scripts/prepare-launch.ps1` with final URL and public email.
+- [x] Run `scripts/verify-static-site.ps1`.
+- [x] Confirm `hello@example.com` is gone.
+- [x] Confirm `site/robots.txt` points to final sitemap URL.
+- [x] Confirm every `site/sitemap.xml` URL uses the final public URL.
+- [x] Deploy updated `site/` through Netlify/GitHub.
+- [x] Run `scripts/verify-public-site.ps1` against the public URL.
 
 ## Day 1 - Verify Live Site
 
-- [ ] Open homepage on desktop and mobile.
-- [ ] Open About, Contact, Privacy Policy, Affiliate Disclosure.
-- [ ] Open Guides hub.
-- [ ] Open 5 important content pages.
-- [ ] Confirm HTTPS.
-- [ ] Confirm no affiliate links are present yet.
-- [ ] Confirm footer disclosure appears.
+- [x] Open homepage on desktop and mobile.
+- [x] Open About, Contact, Privacy Policy, Affiliate Disclosure.
+- [x] Open Guides hub.
+- [x] Open 5 important content pages.
+- [x] Confirm HTTPS.
+- [x] Confirm no affiliate links are present yet.
+- [x] Confirm footer disclosure appears.
 
 ## Day 1 - Search Console
 

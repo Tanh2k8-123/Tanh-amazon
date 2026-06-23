@@ -3,11 +3,13 @@
 ## Current local status
 
 - Static site source exists: `site/`
+- Public site is live: `https://tanhamazon.netlify.app`
 - Netlify config exists: `netlify.toml`
 - Local Git repository exists: `.git/`
 - Deploy ZIP exists: `working/deploy/tanhs-compact-kitchen-site.zip`
 - Launch preparation script exists: `scripts/prepare-launch.ps1`
 - Static verification script exists: `scripts/verify-static-site.ps1`
+- Public verification script exists: `scripts/verify-public-site.ps1`
 - Amazon application packet exists: `working/amazon_associates_application_packet.md`
 - Search Console setup packet exists: `working/search_console_setup_packet.md`
 - Post-launch week 1 runbook exists: `working/post_launch_week_1_runbook.md`
@@ -46,17 +48,13 @@
 - Robots file exists: `/robots.txt`
 - Hero image exists: `/assets/compact-kitchen-hero.png`
 
-## Information needed from Tanh
+## Public launch status
 
-1. Public contact email to replace `hello@example.com`.
-2. Preferred host:
-   - Netlify Free
-   - Cloudflare Pages Free
-3. Final free subdomain if available:
-   - `tanhs-compact-kitchen.netlify.app`
-   - `tanhs-kitchen-notes.netlify.app`
-   - `tanh-compact-home.pages.dev`
-   - `tanhs-compact-kitchen.pages.dev`
+- Contact email: `dotuananh20082006@gmail.com`
+- Public URL: `https://tanhamazon.netlify.app`
+- Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
+- Public verification: passed for 29 sitemap URLs.
+- Remaining external setup: Google Search Console.
 
 ## Netlify deployment steps
 
@@ -68,8 +66,8 @@
    - Publish directory: `site`
 5. Deploy.
 6. Copy the public URL.
-7. Update `site/robots.txt` and `site/sitemap.xml` to the final URL.
-8. Verify the live site.
+7. Run `scripts/prepare-launch.ps1` with the final URL.
+8. Run `scripts/verify-static-site.ps1` and `scripts/verify-public-site.ps1`.
 
 ## Cloudflare Pages deployment steps
 
@@ -87,12 +85,13 @@
 
 ## After deployment
 
-- [ ] Run `scripts/prepare-launch.ps1` with final URL and public contact email.
-- [ ] Run `scripts/verify-static-site.ps1`.
+- [x] Run `scripts/prepare-launch.ps1` with final URL and public contact email.
+- [x] Run `scripts/verify-static-site.ps1`.
+- [x] Run `scripts/verify-public-site.ps1`.
 - [ ] Add Search Console property for final URL.
 - [ ] Submit sitemap.
 - [ ] Use `working/search_console_setup_packet.md` for first URL inspection batch.
 - [ ] Start `working/tracking/indexing_tracker.csv`.
 - [ ] Start `working/tracking/search_console_weekly_kpi.csv`.
 - [ ] Add GA4 only if privacy policy matches the analytics setup.
-- [ ] Do not apply Amazon Associates until 5-10 original posts are live.
+- [ ] Do not apply Amazon Associates until Search Console setup and final compliance review are done.

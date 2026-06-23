@@ -2,19 +2,22 @@
 
 Last updated: 2026-06-23
 
-Purpose: make the post-launch Search Console and analytics setup repeatable once the public URL exists.
+Purpose: make the post-launch Search Console and analytics setup repeatable for the public site.
 
 ## Current Decision
 
-Search Console cannot be completed yet because the site is not deployed publicly.
+Search Console is the next external setup step.
 
-Use this packet immediately after Netlify Free or Cloudflare Pages Free deployment.
+The site is live at:
 
-Current local content status: 20/20 logged content pages are `Source-ready`; Search Console setup is waiting only on public deployment and the final URL.
+```text
+https://tanhamazon.netlify.app
+```
+
+Current local/public content status: 20/20 logged content pages are `Source-ready`; public verification passes for 29 sitemap URLs.
 
 ## Inputs Needed
 
-- Final public URL.
 - Google account for Search Console.
 - Host dashboard access for verification if needed.
 - Decision on analytics:
@@ -23,13 +26,10 @@ Current local content status: 20/20 logged content pages are `Source-ready`; Sea
 
 ## Recommended Search Console Property
 
-For the first free subdomain, use a URL-prefix property.
-
-Examples:
+Use a URL-prefix property:
 
 ```text
-https://tanhs-compact-kitchen.netlify.app/
-https://tanhs-compact-kitchen.pages.dev/
+https://tanhamazon.netlify.app/
 ```
 
 If a custom domain is purchased later, add a Domain property for the root domain.
@@ -49,13 +49,14 @@ Lean-first note: for a free Netlify/Cloudflare subdomain, URL-prefix verificatio
 Submit:
 
 ```text
-https://FINAL_PUBLIC_URL/sitemap.xml
+https://tanhamazon.netlify.app/sitemap.xml
 ```
 
 Before submitting, run:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com"
 ```
 
 The verify script should pass without `-AllowLaunchPlaceholders`.

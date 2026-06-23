@@ -1,6 +1,6 @@
 # Amazon Associates Application Packet
 
-Last updated: 2026-06-22
+Last updated: 2026-06-23
 
 Purpose: prepare the exact information Tanh will need when the site is public enough to apply for Amazon Associates US.
 
@@ -10,27 +10,26 @@ Do not apply yet.
 
 Reason:
 
-- The site is not publicly deployed yet.
-- `site/contact/index.html` still uses the placeholder email `hello@example.com`.
 - Search Console is not connected yet.
 - There are no affiliate links yet, which is intentional.
+- Product evidence for the first money pages has not been collected yet.
 
-Apply only after the public site is live, contact email is real, required pages are reachable, and the first content batch has been checked on the live URL.
+Apply only after Search Console is submitted, the live site has had a final compliance review, and the first money-page evidence plan is ready.
 
 ## Application Readiness Checklist
 
-- [ ] Final public URL exists.
-- [ ] Contact email is real and public.
-- [ ] About page is live.
-- [ ] Contact page is live.
-- [ ] Privacy Policy page is live.
-- [ ] Affiliate Disclosure page is live.
-- [ ] Footer includes: `As an Amazon Associate I earn from qualifying purchases.`
-- [ ] 10+ original content pages are live and reachable.
-- [ ] Sitemap is submitted or ready to submit.
-- [ ] No copied Amazon product images, prices, star ratings, or customer review text.
-- [ ] Traffic plan is written even if traffic is still early.
-- [ ] 180-day plan is ready.
+- [x] Final public URL exists.
+- [x] Contact email is real and public.
+- [x] About page is live.
+- [x] Contact page is live.
+- [x] Privacy Policy page is live.
+- [x] Affiliate Disclosure page is live.
+- [x] Footer includes: `As an Amazon Associate I earn from qualifying purchases.`
+- [x] 10+ original content pages are live and reachable.
+- [ ] Sitemap is submitted in Search Console.
+- [x] No copied Amazon product images, prices, star ratings, or customer review text.
+- [x] Traffic plan is written even if traffic is still early.
+- [x] 180-day plan is ready.
 
 ## Application Fields
 
@@ -39,7 +38,7 @@ Apply only after the public site is live, contact email is real, required pages 
 Use the final HTTPS URL only.
 
 ```text
-TODO: paste final public URL after Netlify/Cloudflare deployment
+https://tanhamazon.netlify.app
 ```
 
 ### Store ID / Tracking ID Idea
@@ -125,7 +124,7 @@ Secondary goals:
 
 ## Do Not Do
 
-- Do not apply before the site is public and contact email is fixed.
+- Do not apply before Search Console setup and final compliance review are done.
 - Do not buy through your own links.
 - Do not ask friends/family to buy just to trigger commissions.
 - Do not incentivize clicks or purchases.

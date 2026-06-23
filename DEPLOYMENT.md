@@ -2,6 +2,12 @@
 
 This project is a zero-budget static website for `Tanh's Compact Kitchen Notes`.
 
+Current public URL:
+
+```text
+https://tanhamazon.netlify.app
+```
+
 ## Recommended hosts
 
 - Netlify Free
@@ -50,12 +56,13 @@ https://github.com/Tanh2k8-123/Tanh-amazon
 
 The `site/_headers` file provides static security headers for hosts that support it.
 
-## Required edits before public launch
+## Current public launch state
 
-- Contact email is currently set to `dotuananh20082006@gmail.com`; update only if Tanh wants a different public address.
-- Update `site/robots.txt` and `site/sitemap.xml` to the final public URL.
-- Add Search Console after the site is public.
-- Do not apply for Amazon Associates until the site has public original content and required pages.
+- Contact email is set to `dotuananh20082006@gmail.com`; update only if Tanh wants a different public address.
+- `site/robots.txt` and `site/sitemap.xml` use `https://tanhamazon.netlify.app`.
+- Public verification passes with `scripts\verify-public-site.ps1`.
+- Add Search Console next.
+- Do not apply for Amazon Associates until Search Console setup and final compliance review are done.
 
 ## Launch preparation command
 
@@ -67,6 +74,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.p
 ```
 
 The first command updates the contact email, sitemap, robots file, and deploy ZIP. The second command verifies required files, internal links, sitemap count, HTTPS URLs, and launch placeholders.
+
+## Public verification command
+
+Run this after Netlify deploys from GitHub:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com"
+```
 
 ## Launch status command
 
@@ -80,8 +95,8 @@ The launch status should show `LaunchBlockerCount` as `0` before the final publi
 
 For a shorter handoff checklist, see `working/deploy/LAUNCH_HANDOFF.md`.
 
-## Current default URL placeholder
+## Current public URL
 
 ```text
-https://tanhs-compact-kitchen.netlify.app
+https://tanhamazon.netlify.app
 ```
