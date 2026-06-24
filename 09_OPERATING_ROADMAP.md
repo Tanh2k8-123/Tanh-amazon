@@ -43,8 +43,9 @@ Muc tieu: website foundation + keyword map.
 - [x] Tao static site source trong `site/`.
 - [x] Khoi tao Git repo local trong thu muc du an.
 - [x] Tao deploy ZIP cho site static.
-- [ ] Deploy len Netlify Free hoac Cloudflare Pages Free.
-- [ ] Dung URL `*.netlify.app` hoac `*.pages.dev` luc dau neu chua co ngan sach mua domain.
+- [x] Deploy len Netlify Free bang Netlify Drop.
+- [x] Dung URL `https://tanhamazon.netlify.app` luc dau vi chua co ngan sach mua domain.
+- [ ] Ket noi Netlify voi GitHub de push vao `main` tu dong deploy.
 - [x] Tao About, Contact, Privacy Policy, Affiliate Disclosure.
 - [x] Them footer statement: `As an Amazon Associate I earn from qualifying purchases.`
 - [x] Tao categories: Best, Reviews, Comparisons, Guides.

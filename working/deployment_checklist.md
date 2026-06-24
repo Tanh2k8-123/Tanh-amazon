@@ -4,6 +4,7 @@
 
 - Static site source exists: `site/`
 - Public site is live: `https://tanhamazon.netlify.app`
+- Current deployment mode is Netlify Drop; Git-based continuous deployment is not connected yet.
 - Netlify config exists: `netlify.toml`
 - Local Git repository exists: `.git/`
 - Deploy ZIP exists: `working/deploy/tanhs-compact-kitchen-site.zip`
@@ -54,7 +55,8 @@
 - Public URL: `https://tanhamazon.netlify.app`
 - Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
 - Public verification: passed for 29 sitemap URLs.
-- Remaining external setup: Google Search Console.
+- Public deployment currently points to commit `161a844`; GitHub `main` is at `bcc614b`.
+- Remaining external setup: connect Netlify to GitHub, verify the new live deploy, then complete Google Search Console.
 
 ## Netlify deployment steps
 
@@ -88,6 +90,7 @@
 - [x] Run `scripts/prepare-launch.ps1` with final URL and public contact email.
 - [x] Run `scripts/verify-static-site.ps1`.
 - [x] Run `scripts/verify-public-site.ps1`.
+- [ ] Connect the existing Netlify project to GitHub and verify automatic deployment from `main`.
 - [ ] Add Search Console property for final URL.
 - [ ] Submit sitemap.
 - [ ] Use `working/search_console_setup_packet.md` for first URL inspection batch.

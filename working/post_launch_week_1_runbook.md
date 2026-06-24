@@ -15,7 +15,8 @@ https://tanhamazon.netlify.app
 - [x] Confirm `hello@example.com` is gone.
 - [x] Confirm `site/robots.txt` points to final sitemap URL.
 - [x] Confirm every `site/sitemap.xml` URL uses the final public URL.
-- [x] Deploy updated `site/` through Netlify/GitHub.
+- [x] Deploy updated `site/` through Netlify Drop.
+- [ ] Connect the existing Netlify project to GitHub for automatic production deploys.
 - [x] Run `scripts/verify-public-site.ps1` against the public URL.
 
 ## Day 1 - Verify Live Site

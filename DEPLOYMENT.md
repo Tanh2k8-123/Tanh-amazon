@@ -61,8 +61,21 @@ The `site/_headers` file provides static security headers for hosts that support
 - Contact email is set to `dotuananh20082006@gmail.com`; update only if Tanh wants a different public address.
 - `site/robots.txt` and `site/sitemap.xml` use `https://tanhamazon.netlify.app`.
 - Public verification passes with `scripts\verify-public-site.ps1`.
+- As of 2026-06-24, the public site was last deployed with Netlify Drop at commit `161a844`.
+- GitHub `main` is ahead of the public deployment. A GitHub push does not update this Netlify project until Git-based continuous deployment is connected.
+- Pending public update: commit `bcc614b` polishes the public compliance pages.
 - Add Search Console next.
 - Do not apply for Amazon Associates until Search Console setup and final compliance review are done.
+
+## Recommended next deployment change
+
+Keep the existing public URL, but connect the current Netlify project to:
+
+```text
+Tanh2k8-123/Tanh-amazon
+```
+
+Use an empty build command and `site` as the publish directory. After the first Git-based production deploy, every push to `main` should update the public site automatically. Until that connection exists, upload the regenerated deploy ZIP through Netlify Drop after each approved release.
 
 ## Launch preparation command
 
