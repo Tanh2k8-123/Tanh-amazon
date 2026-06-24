@@ -47,6 +47,7 @@
 - Chefman product page: `https://chefman.com/products/compact-air-fryer-2-quart`
 - Chefman user guide: `https://cdn.shopify.com/s/files/1/0576/5755/7158/files/RJ38-2T_-_UG_-_US.pdf?v=1715282570`
 - Ninja product page: `https://www.sharkninja.com/ninja-air-fryer-pro-4-in-1/AF141.html`
+- Ninja AF140/AF141 owner's guide support article: `https://support.sharkninja.com/article/AF140-Series-Ninja-Air-Fryer-Pro-3-in-1-Owner-s-Guide`
 - Beautiful product page: `https://beautifulbydrew.com/products/3qt-air-fryer`
 - Beautiful manual: `https://cdn.accentuate.io/7380039991469/1708370155803/19303_19304_19305_19306_19307_19345_19346_BTFL_WMUS_3QT-Digital-Air-Fryer_IM_R2.pdf?v=1708370155804`
 
@@ -56,7 +57,8 @@
 - Chefman user guide: place the unit on a hard, flat surface with at least 6 inches of clearance on top and in back for airflow.
 - Beautiful manual: keep the appliance at least 4 inches away from walls or other objects during operation; useful safety evidence, but not enough for finalist status without official exterior dimensions.
 - Dash manual: use a stable, flat, heat-resistant surface; exact clearance number was not found in the manual text during this pass.
-- Instant Pot and Ninja: product pages provide dimensions, warranty, cleanup, and safety notes; extract exact manual clearance before publishing final buyer claims.
+- Instant Pot manual: leave at least 5 inches / 13 cm above and around all sides of the appliance for sufficient airflow.
+- Ninja AF140/AF141 owner's guide: provide adequate space above and on all sides for air circulation. The current official manual does not publish a numeric clearance, so the article must not invent one.
 
 ## Draft Positioning Notes
 
@@ -68,7 +70,6 @@
 
 ## Outstanding Evidence Before Publication
 
-- Extract exact counter-clearance guidance from the Instant Pot and Ninja manuals or support docs.
 - Confirm current availability from allowed sources immediately before drafting the article.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
-- Re-score candidates after dimensions, clearance, cleaning, and use-case evidence are complete.
+- Re-score candidates immediately before drafting after current availability and image evidence are complete.

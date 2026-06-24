@@ -30,16 +30,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\audit-affiliate-read
 
 ## Interpretation
 
-Local content, compliance scaffolding, and evidence planning are ready. Across the first-wave money pages, the tracker now has 34 product-evidence rows: 26 source-documented, 3 needing official verification, and 5 on hold. The compact-air-fryer, dish-drying-rack, small-coffee-maker, compact-rice-cooker, and sink-organizer pages all have first-pass candidate evidence. Do not apply to Amazon Associates yet because Search Console has not been submitted and several candidate pages still need final official/retailer verification before publication.
+Local content, compliance scaffolding, and evidence planning are ready. Across the first-wave money pages, the tracker now has 34 product-evidence rows: 26 source-documented, 3 needing official verification, and 5 on hold. The compact-air-fryer, dish-drying-rack, small-coffee-maker, compact-rice-cooker, and sink-organizer pages all have first-pass candidate evidence. Instant Pot and Ninja operating-clearance guidance is now documented from official manuals; Ninja's current manual provides qualitative guidance rather than a numeric distance. Do not apply to Amazon Associates yet because Search Console has not been submitted and several candidate pages still need final official/retailer verification before publication.
 
 ## Next Actions
 
 1. Complete Search Console Day 0 setup.
-2. Extract exact Instant Pot and Ninja manual clearance notes before publishing the compact air fryer money page.
-3. Confirm current availability and Amazon US eligibility for dish rack finalists after Associates approval.
-4. Extract Keurig K-Mini cleaning/descaling support details before publishing the small coffee maker money page.
-5. Replace remaining public testing sources with official or retailer sources for OXO and simplehuman sink organizer candidates before publishing.
-6. Confirm current availability from allowed sources immediately before drafting money pages.
-7. Run `scripts\audit-affiliate-readiness.ps1` again.
-8. Do a final live-site compliance review.
-9. Apply to Amazon Associates only after the above is complete.
+2. Confirm current availability and Amazon US eligibility for dish rack finalists after Associates approval.
+3. Extract Keurig K-Mini cleaning/descaling support details before publishing the small coffee maker money page.
+4. Replace remaining public testing sources with official or retailer sources for OXO and simplehuman sink organizer candidates before publishing.
+5. Confirm current availability from allowed sources immediately before drafting money pages.
+6. Run `scripts\audit-affiliate-readiness.ps1` again.
+7. Do a final live-site compliance review.
+8. Apply to Amazon Associates only after the above is complete.
