@@ -16,6 +16,7 @@ Use this before Search Console submission because the public Netlify deploy is c
 
 - [ ] Deploy latest source or `working/deploy/tanhs-compact-kitchen-site.zip` to Netlify.
 - [ ] Run `scripts\verify-static-site.ps1`.
+- [ ] Run `scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"` and confirm `PublicDeployGatePassed` is `True`.
 - [ ] Run `scripts\verify-public-site.ps1 -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"`.
 - [ ] Confirm `/best/compact-rice-cookers-two-people/` returns 200 publicly.
 - [ ] Confirm `/best/sink-organizers-small-kitchens/` returns 200 publicly.

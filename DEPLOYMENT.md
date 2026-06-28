@@ -102,9 +102,10 @@ Run this before and after deployment to see remaining blockers:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
-The launch status should show `LaunchBlockerCount` as `0` before the final public launch is considered clean.
+The launch status should show `LaunchBlockerCount` as `0` and `PublicDeployGatePassed` as `True` before the latest public launch is considered clean.
 
 For a shorter handoff checklist, see `working/deploy/LAUNCH_HANDOFF.md`.
 

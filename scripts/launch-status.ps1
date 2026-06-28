@@ -2,7 +2,11 @@ param(
   [string]$SiteDir = 'site',
   [string]$ContentLogPath = 'working/tracking/content_log.csv',
   [string]$ContentInventoryPath = 'working/audits/content_inventory.csv',
-  [string]$DefaultPlaceholderHost = 'tanhs-compact-kitchen.netlify.app'
+  [string]$DefaultPlaceholderHost = 'tanhs-compact-kitchen.netlify.app',
+  [string]$PublicUrl = 'https://tanhamazon.netlify.app',
+  [int]$ExpectedPublicSitemapUrls = 0,
+  [string]$RequiredPublicPathList = '',
+  [switch]$CheckPublic
 )
 
 $ErrorActionPreference = 'Stop'
@@ -72,6 +76,52 @@ if ($contentRows.Count -gt 0 -and $sourceReadyRows.Count -lt $contentRows.Count)
   $blockers.Add("Not all logged content pages are Source-ready.")
 }
 
+$publicCheckErrors = New-Object System.Collections.Generic.List[string]
+$publicSitemapUrlCount = $null
+$publicRequiredUrlsMissing = @()
+$publicDeployGatePassed = $null
+$publicBaseUrl = $PublicUrl.TrimEnd('/')
+
+if ($CheckPublic) {
+  try {
+    $publicSitemapUrl = "$publicBaseUrl/sitemap.xml"
+    $publicSitemapResponse = Invoke-WebRequest -Uri $publicSitemapUrl -UseBasicParsing -TimeoutSec 30
+    $publicSitemapXml = [xml]([string]$publicSitemapResponse.Content)
+    $publicLocs = @($publicSitemapXml.GetElementsByTagName('loc') | ForEach-Object { $_.InnerText })
+    $publicSitemapUrlCount = $publicLocs.Count
+
+    if ($ExpectedPublicSitemapUrls -gt 0 -and $publicSitemapUrlCount -ne $ExpectedPublicSitemapUrls) {
+      $publicCheckErrors.Add("Public sitemap has $publicSitemapUrlCount URLs; expected $ExpectedPublicSitemapUrls.")
+    }
+
+    $requiredPublicPaths = @()
+    if (-not [string]::IsNullOrWhiteSpace($RequiredPublicPathList)) {
+      $requiredPublicPaths = @($RequiredPublicPathList.Split(',') | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+    }
+
+    $requiredPublicUrls = foreach ($path in $requiredPublicPaths) {
+      if ($path.StartsWith('https://')) {
+        $path.TrimEnd('/')
+      } else {
+        "$publicBaseUrl/$($path.TrimStart('/'))".TrimEnd('/')
+      }
+    }
+
+    $publicRequiredUrlsMissing = @($requiredPublicUrls | Where-Object {
+      $requiredUrl = $_
+      -not ($publicLocs | Where-Object { $_.TrimEnd('/') -eq $requiredUrl } | Select-Object -First 1)
+    })
+
+    if ($publicRequiredUrlsMissing.Count -gt 0) {
+      $publicCheckErrors.Add("Public sitemap is missing required URLs: $($publicRequiredUrlsMissing -join ', ').")
+    }
+  } catch {
+    $publicCheckErrors.Add("Public check failed: $($_.Exception.Message)")
+  }
+
+  $publicDeployGatePassed = $publicCheckErrors.Count -eq 0
+}
+
 [pscustomobject]@{
   ProjectRoot = $root.Path
   HtmlFiles = $htmlFiles.Count
@@ -89,4 +139,10 @@ if ($contentRows.Count -gt 0 -and $sourceReadyRows.Count -lt $contentRows.Count)
   DeployZipBytes = if (Test-Path -LiteralPath $zipPath) { (Get-Item -LiteralPath $zipPath).Length } else { 0 }
   LaunchBlockerCount = $blockers.Count
   LaunchBlockers = ($blockers -join ' | ')
+  PublicUrl = if ($CheckPublic) { $publicBaseUrl } else { $null }
+  PublicSitemapUrls = $publicSitemapUrlCount
+  ExpectedPublicSitemapUrls = if ($CheckPublic -and $ExpectedPublicSitemapUrls -gt 0) { $ExpectedPublicSitemapUrls } else { $null }
+  PublicRequiredUrlsMissing = if ($CheckPublic) { ($publicRequiredUrlsMissing -join ' | ') } else { $null }
+  PublicDeployGatePassed = $publicDeployGatePassed
+  PublicDeployGateErrors = if ($CheckPublic) { ($publicCheckErrors -join ' | ') } else { $null }
 }

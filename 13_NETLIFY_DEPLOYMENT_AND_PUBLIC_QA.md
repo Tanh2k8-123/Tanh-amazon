@@ -37,6 +37,7 @@ Dua commit source moi len `https://tanhamazon.netlify.app/`, xac nhan public sit
 ## Commands
 
 ```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 

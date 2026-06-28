@@ -36,7 +36,7 @@ Last updated: 2026-06-28
 | --- | --- | --- | --- |
 | P0 | Commit and push current source updates. | Codex | Done; GitHub `main` is ahead of public Netlify |
 | P0 | Deploy latest source to Netlify. | Owner/Codex if access exists | Pending external access; public sitemap still has 29 URLs |
-| P0 | Verify public `/sitemap.xml` has 34 URLs. | Owner/Codex after deploy | Pending deploy; rice cooker and sink organizer URLs currently 404 public |
+| P0 | Verify public `/sitemap.xml` has 34 URLs. | Owner/Codex after deploy | Pending deploy; `launch-status -CheckPublic` currently reports `PublicDeployGatePassed=False` |
 | P0 | Set up Search Console and submit sitemap. | Owner | Pending Google access |
 | P1 | Run final affiliate readiness audit after public deploy. | Codex | Pending deploy |
 | P1 | Apply Amazon Associates only after GSC/final review. | Owner | Hold |

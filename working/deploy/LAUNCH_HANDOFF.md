@@ -53,6 +53,7 @@ Chay lenh nay bat cu luc nao de xem con blocker nao:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 Trang thai launch duoc xem la sach khi:
@@ -60,6 +61,7 @@ Trang thai launch duoc xem la sach khi:
 - `PlaceholderEmailPresent` la `False`.
 - `PlaceholderHostPresent` la `False`.
 - `LaunchBlockerCount` la `0`.
+- `PublicDeployGatePassed` la `True` khi check public deploy.
 - `scripts\verify-static-site.ps1` pass khong can `-AllowLaunchPlaceholders`.
 
 ## Sau khi public

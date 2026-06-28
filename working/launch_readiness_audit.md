@@ -33,6 +33,7 @@ Last updated: 2026-06-28
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\prepare-launch.ps1 -PublicUrl "https://final-public-url" -ContactEmail "dotuananh20082006@gmail.com"
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
