@@ -1,6 +1,6 @@
 # Amazon Associates Application Packet
 
-Last updated: 2026-06-23
+Last updated: 2026-06-28
 
 Purpose: prepare the exact information Tanh will need when the site is public enough to apply for Amazon Associates US.
 
@@ -11,10 +11,11 @@ Do not apply yet.
 Reason:
 
 - Search Console is not connected yet.
+- Latest 34-URL source is not deployed to Netlify yet; the public sitemap still has 29 URLs.
 - There are no affiliate links yet, which is intentional.
-- Product evidence templates are ready, but real product evidence has not been collected yet.
+- Product evidence has been collected for the first five money pages, but affiliate links are still intentionally absent.
 
-Apply only after Search Console is submitted, the live site has had a final compliance review, and the first money-page evidence plan is ready.
+Apply only after latest source is deployed, Search Console is submitted, the live site has had a final compliance review, and the first money pages are publicly reachable.
 
 ## Application Readiness Checklist
 
@@ -26,12 +27,13 @@ Apply only after Search Console is submitted, the live site has had a final comp
 - [x] Affiliate Disclosure page is live.
 - [x] Footer includes: `As an Amazon Associate I earn from qualifying purchases.`
 - [x] 10+ original content pages are live and reachable.
+- [ ] Latest 34-URL source deployment is live and verified.
 - [ ] Sitemap is submitted in Search Console.
 - [x] No copied Amazon product images, prices, star ratings, or customer review text.
 - [x] Traffic plan is written even if traffic is still early.
 - [x] 180-day plan is ready.
 - [x] Money-page evidence templates are ready.
-- [ ] Product evidence has been collected for first money pages.
+- [x] Product evidence has been collected for first money pages.
 - [ ] `scripts/audit-affiliate-readiness.ps1` has been run after Search Console setup.
 
 ## Application Fields
@@ -103,15 +105,15 @@ The site may earn commissions through Amazon Associates links when readers choos
 
 ## First Affiliate Pages To Consider After Approval
 
-Do not publish these as affiliate pages until product evidence is collected.
+These pages exist as non-affiliate source pages after evidence collection. Do not add affiliate links until approval, live deploy verification, and Task 16 link logging/disclosure workflow are complete.
 
-| Priority | Page idea | Current evidence need |
+| Priority | Page idea | Current status |
 | --- | --- | --- |
-| 1 | Best compact air fryers for small kitchens | Product model shortlist, dimensions, basket capacity, cleaning notes, clearance notes. |
-| 2 | Best dish drying racks for small kitchens | Rack types, counter depth, drainage, storage, product dimensions. |
-| 3 | Best small coffee makers for apartments | Brew type, counter footprint, water access, cleaning, noise. |
-| 4 | Best compact rice cookers for two people | Capacity definitions, pot cleaning, lid clearance, keep-warm notes. |
-| 5 | Best sink organizers for small kitchens | Drainage, airflow, sponge/brush fit, footprint, cleaning. |
+| 1 | Best compact air fryers for small kitchens | Source-ready, no affiliate links. |
+| 2 | Best dish drying racks for small kitchens | Source-ready, no affiliate links. |
+| 3 | Best small coffee makers for apartments | Source-ready, no affiliate links. |
+| 4 | Best compact rice cookers for two people | Source-ready, pending public Netlify deploy. |
+| 5 | Best sink organizers for small kitchens | Source-ready, pending public Netlify deploy. |
 
 Evidence templates:
 

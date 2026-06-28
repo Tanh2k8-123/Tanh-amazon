@@ -18,23 +18,23 @@ Last updated: 2026-06-28
 
 | Priority | URL | Status | Next action |
 | --- | --- | --- | --- |
-| P0 | `/best/compact-air-fryers-small-kitchens/` | Source-ready | Deploy latest source and submit in Search Console. |
-| P0 | `/best/dish-drying-racks-small-kitchens/` | Source-ready | Deploy latest source and submit in Search Console. |
-| P0 | `/best/small-coffee-makers-apartments/` | Source-ready | Deploy latest source and submit in Search Console. |
-| P0 | `/best/compact-rice-cookers-two-people/` | Source-ready | Deploy latest source and submit in Search Console. |
-| P0 | `/best/sink-organizers-small-kitchens/` | Source-ready | Deploy latest source and submit in Search Console. |
+| P0 | `/best/compact-air-fryers-small-kitchens/` | Source-ready | Deploy latest source, verify public URL, then submit in Search Console. |
+| P0 | `/best/dish-drying-racks-small-kitchens/` | Source-ready | Deploy latest source, verify public URL, then submit in Search Console. |
+| P0 | `/best/small-coffee-makers-apartments/` | Source-ready | Deploy latest source, verify public URL, then submit in Search Console. |
+| P0 | `/best/compact-rice-cookers-two-people/` | Source-ready | Deploy latest source, verify public URL, then submit in Search Console. |
+| P0 | `/best/sink-organizers-small-kitchens/` | Source-ready | Deploy latest source, verify public URL, then submit in Search Console. |
 
 ## Weekly KPI Placeholder
 
 | Week | Published pages | Indexed pages | GSC impressions | GSC clicks | Affiliate clicks | Sales | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Week 0 | 25 source-ready | Pending GSC | N/A | N/A | N/A | N/A | Deploy latest source, submit sitemap, and start tracking. |
+| Week 0 | 25 source-ready | Pending GSC | N/A | N/A | N/A | N/A | Deploy latest source, verify 34-URL public sitemap, submit sitemap, and start tracking. |
 
 ## Action Queue
 
 | Priority | Action | Owner | Status |
 | --- | --- | --- | --- |
-| P0 | Commit and push current source updates. | Codex | Done in `6d79669` |
+| P0 | Commit and push current source updates. | Codex | Done; GitHub `main` is ahead of public Netlify |
 | P0 | Deploy latest source to Netlify. | Owner/Codex if access exists | Pending external access; public sitemap still has 29 URLs |
 | P0 | Verify public `/sitemap.xml` has 34 URLs. | Owner/Codex after deploy | Pending deploy; rice cooker and sink organizer URLs currently 404 public |
 | P0 | Set up Search Console and submit sitemap. | Owner | Pending Google access |

@@ -50,7 +50,7 @@ Muc tieu: website foundation + keyword map.
 - [x] Them footer statement: `As an Amazon Associate I earn from qualifying purchases.`
 - [x] Tao categories: Best, Reviews, Comparisons, Guides.
 - [x] Tao sitemap.xml va robots.txt.
-- [x] Tao 20 bai source-ready khong affiliate link.
+- [x] Tao 25 bai source-ready khong affiliate link trong source.
 - [ ] Ket noi Search Console va GA4.
 - [x] Hoan thanh keyword database 50+ keywords.
 - [x] Chon 5 bai dau tien.
@@ -67,9 +67,9 @@ Done khi:
 
 Muc tieu: publish content dau tien va co tin hieu index.
 
-- [x] Publish 20 bai dau tien trong source site, chua deploy public.
+- [x] Publish 25 bai dau tien trong source site; latest 34-URL source van can deploy public.
 - [x] Moi bai co disclosure/no-affiliate note, internal links, meta title/description.
-- [ ] Submit sitemap.
+- [ ] Deploy latest 34-URL source, then submit sitemap.
 - [ ] Submit URL quan trong trong Search Console.
 - [x] Tao weekly report 001 va tracking files local.
 - [x] Tao Search Console setup packet va indexing tracker.
@@ -88,10 +88,10 @@ Done khi:
 
 Muc tieu: co site du noi dung de dang ky/van hanh Amazon Associates nghiem tuc.
 
-- [x] Publish tong 20 bai trong source site, chua deploy public.
+- [x] Publish tong 25 bai trong source site; latest money pages van can public deploy.
 - [ ] Hoan thanh 3-5 pillar/hub pages.
 - [ ] Cap nhat bai co impressions cao.
-- [ ] Apply Amazon Associates khi site co content va traffic nhe.
+- [ ] Apply Amazon Associates khi latest source da deploy, GSC setup xong, va site co content/traffic nhe.
 - [ ] Them affiliate links vao money posts sau khi co Tracking ID.
 - [ ] Audit 100% affiliate pages.
 - [ ] Dat ke hoach 3 qualifying sales trong 180 ngay sau apply.
@@ -153,7 +153,7 @@ Moi thang tra loi:
 - [ ] Publish 5 bai dau trong 30 ngay.
 - [ ] Publish 15-25 bai trong 90 ngay.
 - [ ] Tao weekly report deu moi tuan.
-- [ ] Apply Amazon Associates khi site co content va traffic nhe.
+- [ ] Apply Amazon Associates khi latest source da deploy, GSC setup xong, va site co content/traffic nhe.
 - [ ] Audit affiliate links/disclosure sau khi gan link.
 - [ ] Lap ke hoach video/storefront khi co bai co traction.
 
@@ -163,7 +163,7 @@ Moi thang tra loi:
 | --- | --- | --- | --- | --- |
 | Published posts | 0 | 5 | 15-25 | 40-60 |
 | Indexed posts | 0 | 4+ | 90%+ | 90%+ |
-| Product candidates | 30 | 50 | 100 | 150 |
+| Product candidates | 34 | 50 | 100 | 150 |
 | Affiliate sales | 0 | 0 | Start/early | Data-driven |
 | Videos | 0 | 0-2 | 3-6 | 20+ |
 | Weekly reports | 1 | 4 | 12 | 24 |

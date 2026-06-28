@@ -21,8 +21,9 @@ Chuan bi va nop Amazon Associates US khi public site on, Search Console da setup
 
 ## Pre-Apply Checklist
 
+- [ ] Latest 34-URL Netlify deploy verified; rice cooker and sink organizer URLs khong 404.
 - [ ] Public homepage, hubs, sitemap, required pages khong 404.
-- [ ] Search Console property verified hoac pending co ly do ro.
+- [ ] Search Console property verified and sitemap submitted, hoac pending co ly do ro.
 - [ ] `scripts\audit-affiliate-readiness.ps1` pass.
 - [ ] Khong co Amazon affiliate links truoc khi workflow san sang.
 - [ ] Khong co copied Amazon prices/ratings/reviews/images.
@@ -49,6 +50,12 @@ Chuan bi va nop Amazon Associates US khi public site on, Search Console da setup
 ## External Access Needed
 
 Can Amazon Associates account/application access cua owner.
+
+## Current Hold Notes
+
+- 2026-06-28: Amazon application remains on hold because public Netlify still serves the older 29-URL sitemap.
+- 2026-06-28: Local affiliate-readiness audit passes with 25 source-ready content pages, 5 planned money pages, 0 Amazon affiliate links, and 0 manual Amazon data mentions.
+- Next action before applying: deploy latest 34-URL source, verify public gate, submit sitemap in Search Console, then rerun affiliate readiness.
 
 ## Done
 

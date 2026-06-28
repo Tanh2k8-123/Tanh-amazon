@@ -54,8 +54,8 @@
 - Contact email: `dotuananh20082006@gmail.com`
 - Public URL: `https://tanhamazon.netlify.app`
 - Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
-- Public verification: passed for 29 sitemap URLs on the currently deployed public site.
-- Public deployment currently points to commit `161a844`; GitHub `main` is at `cb1dd08`.
+- Public verification: passed for 29 sitemap URLs on the currently deployed public site, but the 34-URL gate fails until Netlify is updated.
+- Public deployment currently points to an older Netlify Drop deploy; GitHub `main` is ahead of public.
 - Latest source has 34 sitemap URLs. Public Netlify still needs an updated deploy because `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` returned 404 on 2026-06-28.
 - Remaining external setup: connect Netlify to GitHub, verify the new live deploy, then complete Google Search Console.
 
@@ -90,10 +90,10 @@
 
 - [x] Run `scripts/prepare-launch.ps1` with final URL and public contact email.
 - [x] Run `scripts/verify-static-site.ps1`.
-- [x] Run `scripts/verify-public-site.ps1`.
+- [ ] Run `scripts/verify-public-site.ps1` with the 34-URL gate after Netlify deploys latest source.
 - [ ] Connect the existing Netlify project to GitHub and verify automatic deployment from `main`.
 - [ ] Add Search Console property for final URL.
-- [ ] Submit sitemap.
+- [ ] Submit sitemap after public verification passes with 34 URLs.
 - [ ] Use `working/search_console_setup_packet.md` for first URL inspection batch.
 - [x] Start `working/tracking/indexing_tracker.csv`.
 - [x] Start `working/tracking/search_console_weekly_kpi.csv`.

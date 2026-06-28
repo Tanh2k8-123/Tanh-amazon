@@ -6,7 +6,7 @@ Purpose: make the post-launch Search Console and analytics setup repeatable for 
 
 ## Current Decision
 
-Search Console is the next external setup step.
+Netlify deploy is the next external setup step. Search Console should follow only after the public sitemap has 34 URLs.
 
 The site is live at:
 

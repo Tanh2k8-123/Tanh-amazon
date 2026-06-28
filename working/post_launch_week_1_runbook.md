@@ -2,11 +2,24 @@
 
 Use this after the site is publicly deployed and the final URL is known.
 
+Last updated: 2026-06-28
+
 Public URL:
 
 ```text
 https://tanhamazon.netlify.app
 ```
+
+## Current 34-URL Re-Launch Gate
+
+Use this before Search Console submission because the public Netlify deploy is currently older than the source.
+
+- [ ] Deploy latest source or `working/deploy/tanhs-compact-kitchen-site.zip` to Netlify.
+- [ ] Run `scripts\verify-static-site.ps1`.
+- [ ] Run `scripts\verify-public-site.ps1 -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"`.
+- [ ] Confirm `/best/compact-rice-cookers-two-people/` returns 200 publicly.
+- [ ] Confirm `/best/sink-organizers-small-kitchens/` returns 200 publicly.
+- [ ] Only then continue to Search Console sitemap submission.
 
 ## Day 0 - Finalize Launch Files
 
@@ -35,7 +48,7 @@ https://tanhamazon.netlify.app
 - [x] Prepare `working/tracking/indexing_tracker.csv` with all 29 public URLs.
 - [ ] Add URL-prefix property.
 - [ ] Verify ownership.
-- [ ] Submit sitemap.
+- [ ] Submit sitemap after the 34-URL public verification gate passes.
 - [ ] Inspect homepage.
 - [ ] Inspect Guides hub.
 - [ ] Inspect first 5 priority articles.

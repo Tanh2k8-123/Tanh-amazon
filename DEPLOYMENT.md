@@ -60,11 +60,11 @@ The `site/_headers` file provides static security headers for hosts that support
 
 - Contact email is set to `dotuananh20082006@gmail.com`; update only if Tanh wants a different public address.
 - `site/robots.txt` and `site/sitemap.xml` use `https://tanhamazon.netlify.app`.
-- Public verification passes with `scripts\verify-public-site.ps1`.
+- Local static verification passes with 34 sitemap URLs.
 - As of 2026-06-24, the public site was last deployed with Netlify Drop at commit `161a844`.
 - GitHub `main` is ahead of the public deployment. A GitHub push does not update this Netlify project until Git-based continuous deployment is connected.
-- Pending public update: commit `bcc614b` polishes the public compliance pages.
-- Add Search Console next.
+- Current public Netlify sitemap still has 29 URLs. Latest source has 34 URLs and includes `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/`.
+- Deploy latest source before Search Console.
 - Do not apply for Amazon Associates until Search Console setup and final compliance review are done.
 
 ## Recommended next deployment change
@@ -93,7 +93,7 @@ The first command updates the contact email, sitemap, robots file, and deploy ZI
 Run this after Netlify deploys from GitHub:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 ## Launch status command

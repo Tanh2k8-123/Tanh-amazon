@@ -1,5 +1,7 @@
 # Compliance Source Audit - 2026-06-22
 
+Last re-check: 2026-06-28
+
 Scope: Amazon US affiliate project for `Tanh's Compact Kitchen Notes`, Home/Kitchen niche, static site, no affiliate links added yet.
 
 ## Sources Checked
@@ -30,7 +32,8 @@ Scope: Amazon US affiliate project for `Tanh's Compact Kitchen Notes`, Home/Kitc
 - Site has no Amazon affiliate links yet.
 - Footer and disclosure page include the exact Amazon Associate statement.
 - Content pages use no Amazon prices, star ratings, customer reviews, product images, or manually copied Amazon product media.
-- Public launch still needs a real contact email and a final host choice.
+- Contact email and final public host are set.
+- Latest 34-URL source still needs Netlify deployment before Search Console submission and Amazon application.
 
 ## Next Review
 

@@ -20,7 +20,7 @@ Nam cac quy dinh toi thieu truoc khi xay website va gan affiliate link. Task nay
 
 ## Nguon can doc va bookmark
 
-Lan doi chieu gan nhat: 2026-06-22. Amazon Associates Program Policies hien ghi `Updated: April 14, 2026`; van can review lai truoc khi apply, truoc khi them affiliate links va moi thang sau do.
+Lan doi chieu gan nhat: 2026-06-28. Amazon Associates Program Policies hien ghi `Updated: April 14, 2026`; van can review lai truoc khi apply, truoc khi them affiliate links va moi thang sau do.
 
 | Chu de | Nguon |
 | --- | --- |

@@ -1,24 +1,27 @@
 # Launch Handoff
 
-Last updated: 2026-06-23
+Last updated: 2026-06-28
 
 ## Trang thai hien tai
 
 - Site static da san sang trong `site/`.
-- Public site da live: `https://tanhamazon.netlify.app`.
+- Public site da live: `https://tanhamazon.netlify.app`, nhung dang phuc vu deployment cu.
 - File deploy ZIP: `working/deploy/tanhs-compact-kitchen-site.zip`.
-- 29 HTML pages va 29 sitemap URLs.
-- 20/20 content pages da dat `Source-ready` theo `scripts/audit-content.ps1`.
+- Latest local source: 34 HTML pages va 34 sitemap URLs.
+- Current public Netlify deploy: 29 sitemap URLs; rice cooker va sink organizer money pages dang 404 public cho den khi deploy ZIP/Git moi.
+- 25/25 content pages da dat `Source-ready` theo `scripts/audit-content.ps1`.
 - 0 content pages can mo rong them truoc khi promote.
 - 0 content pages thieu internal links trong article body.
 - Chua co Amazon affiliate links, dung voi chien luoc lean-first.
-- Public verification da pass cho 29 sitemap URLs.
+- Public verification gate moi se pass chi khi public sitemap co 34 URLs va co rice cooker + sink organizer pages.
 
 ## Con can Tanh thuc hien tiep
 
-1. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
-2. Submit sitemap `https://tanhamazon.netlify.app/sitemap.xml`.
-3. Inspect cac URL uu tien trong `working/search_console_setup_packet.md`.
+1. Deploy latest source len Netlify bang GitHub connection hoac upload `working/deploy/tanhs-compact-kitchen-site.zip`.
+2. Chay public verification 34-URL gate.
+3. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
+4. Submit sitemap `https://tanhamazon.netlify.app/sitemap.xml`.
+5. Inspect cac URL uu tien trong `working/search_console_setup_packet.md`.
 
 Public contact email hien tai: `dotuananh20082006@gmail.com`.
 
@@ -41,7 +44,7 @@ Da thuc hien:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 ## Kiem tra launch status
@@ -61,11 +64,12 @@ Trang thai launch duoc xem la sach khi:
 
 ## Sau khi public
 
-1. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
-2. Submit `https://tanhamazon.netlify.app/sitemap.xml`.
-3. Inspect cac URL dau tien trong `working/search_console_setup_packet.md`.
-4. Theo doi KPI hang tuan trong `working/tracking/search_console_weekly_kpi.csv`.
-5. Chua apply Amazon Associates cho den khi site public on dinh va da review lai compliance.
+1. Xac nhan public verification 34-URL gate pass.
+2. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
+3. Submit `https://tanhamazon.netlify.app/sitemap.xml`.
+4. Inspect cac URL dau tien trong `working/search_console_setup_packet.md`.
+5. Theo doi KPI hang tuan trong `working/tracking/search_console_weekly_kpi.csv`.
+6. Chua apply Amazon Associates cho den khi site public on dinh va da review lai compliance.
 
 ## Khong lam luc nay
 

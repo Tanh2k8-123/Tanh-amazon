@@ -21,6 +21,7 @@ Them affiliate links dung policy sau khi Amazon Associates workflow san sang, co
 
 ## Link Insertion Rules
 
+- Do not add links until Task 15 has tracking ID/application status and the public 34-URL deploy is verified.
 - Disclosure phai xuat hien truoc affiliate link dau tien tren page.
 - CTA/link phai ro rang la paid/affiliate khi can.
 - Dung `rel="sponsored"` cho affiliate links.
@@ -30,6 +31,8 @@ Them affiliate links dung policy sau khi Amazon Associates workflow san sang, co
 
 ## Checklist Per Page
 
+- [ ] Confirm Amazon Associates tracking ID/application status is active enough for link insertion.
+- [ ] Confirm public page returns 200 on the latest Netlify deploy.
 - [ ] Confirm page has current evidence and update date.
 - [ ] Confirm product still fits pick/watchlist role.
 - [ ] Confirm no forbidden Amazon data exists.
@@ -59,3 +62,4 @@ Them affiliate links dung policy sau khi Amazon Associates workflow san sang, co
 - 100% affiliate links logged.
 - 100% monetized pages have disclosure before first paid link.
 - Audit pass after link insertion.
+- No Amazon image, price, rating, review, Prime badge, or other manually copied Amazon data is hardcoded.
