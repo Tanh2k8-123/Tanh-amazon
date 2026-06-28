@@ -22,7 +22,7 @@ Dua commit source moi len `https://tanhamazon.netlify.app/`, xac nhan public sit
 
 ## Checklist
 
-- [ ] Kiem tra GitHub `main` co commit moi nhat.
+- [x] Kiem tra GitHub `main` co commit moi nhat.
 - [ ] Neu co quyen Netlify: connect Netlify project voi GitHub repo.
 - [ ] Neu chua connect GitHub: upload ZIP moi bang Netlify Drop.
 - [ ] Xac nhan `/best/compact-rice-cookers-two-people/` khong 404.
@@ -49,3 +49,11 @@ Can Netlify login/session cua owner de connect GitHub hoac upload ZIP neu CLI/se
 - Public site hien thi du homepage, best pages, guides, sitemap moi.
 - Public verification pass.
 - Deployment path cho cac lan sau ro rang.
+
+## Public QA Notes
+
+- 2026-06-28: GitHub `main` pushed through commit `cb1dd08`.
+- 2026-06-28: Public Netlify sitemap still has 29 URLs, while local source sitemap has 34 URLs.
+- 2026-06-28: Public `/best/compact-rice-cookers-two-people/` returned 404.
+- 2026-06-28: Public `/best/sink-organizers-small-kitchens/` returned 404.
+- Next action: connect Netlify to GitHub or upload the refreshed `working/deploy/tanhs-compact-kitchen-site.zip`.

@@ -54,8 +54,9 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 - Public Netlify deployment is live.
 - Contact email is set to `dotuananh20082006@gmail.com`.
 - `robots.txt` and `sitemap.xml` use `https://tanhamazon.netlify.app`.
-- Public verification passes for all 29 sitemap URLs.
-- Next external step: connect Google Search Console and submit the sitemap.
+- Public verification passes for all 29 currently deployed sitemap URLs.
+- Latest source now has 34 sitemap URLs and needs a Netlify deploy before the new money pages are public.
+- Next external step: deploy latest source, then connect Google Search Console and submit the sitemap.
 
 Quick status check:
 

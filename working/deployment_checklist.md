@@ -54,8 +54,9 @@
 - Contact email: `dotuananh20082006@gmail.com`
 - Public URL: `https://tanhamazon.netlify.app`
 - Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
-- Public verification: passed for 29 sitemap URLs.
-- Public deployment currently points to commit `161a844`; GitHub `main` is at `bcc614b`.
+- Public verification: passed for 29 sitemap URLs on the currently deployed public site.
+- Public deployment currently points to commit `161a844`; GitHub `main` is at `cb1dd08`.
+- Latest source has 34 sitemap URLs. Public Netlify still needs an updated deploy because `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` returned 404 on 2026-06-28.
 - Remaining external setup: connect Netlify to GitHub, verify the new live deploy, then complete Google Search Console.
 
 ## Netlify deployment steps
