@@ -2,7 +2,13 @@ param(
   [ValidatePattern('^https://[^/]+/?$')]
   [string]$PublicUrl = 'https://tanhamazon.netlify.app',
 
-  [string]$ContactEmail = 'dotuananh20082006@gmail.com'
+  [string]$ContactEmail = 'dotuananh20082006@gmail.com',
+
+  [int]$ExpectedSitemapUrls = 0,
+
+  [string[]]$RequiredPublicPaths = @(),
+
+  [string]$RequiredPublicPathList = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -50,6 +56,10 @@ if ($locs.Count -eq 0) {
   Add-Error 'sitemap.xml contains no loc entries.'
 }
 
+if ($ExpectedSitemapUrls -gt 0 -and $locs.Count -ne $ExpectedSitemapUrls) {
+  Add-Error "sitemap.xml contains $($locs.Count) URLs; expected $ExpectedSitemapUrls."
+}
+
 $nonHttps = @($locs | Where-Object { -not $_.StartsWith('https://') })
 if ($nonHttps.Count -gt 0) {
   Add-Error "sitemap.xml contains non-HTTPS URLs: $($nonHttps -join ', ')."
@@ -58,6 +68,39 @@ if ($nonHttps.Count -gt 0) {
 $wrongHost = @($locs | Where-Object { -not $_.StartsWith("$baseUrl/") -and $_ -ne "$baseUrl/" })
 if ($wrongHost.Count -gt 0) {
   Add-Error "sitemap.xml contains URLs outside ${baseUrl}: $($wrongHost -join ', ')."
+}
+
+$requiredPathInputs = New-Object System.Collections.Generic.List[string]
+foreach ($path in $RequiredPublicPaths) {
+  if (-not [string]::IsNullOrWhiteSpace($path)) {
+    $requiredPathInputs.Add($path)
+  }
+}
+if (-not [string]::IsNullOrWhiteSpace($RequiredPublicPathList)) {
+  $RequiredPublicPathList.Split(',') | ForEach-Object {
+    if (-not [string]::IsNullOrWhiteSpace($_)) {
+      $requiredPathInputs.Add($_.Trim())
+    }
+  }
+}
+
+$requiredUrls = foreach ($path in $requiredPathInputs) {
+  if ([string]::IsNullOrWhiteSpace($path)) {
+    continue
+  }
+  if ($path.StartsWith('https://')) {
+    $path.TrimEnd('/')
+  } else {
+    "$baseUrl/$($path.TrimStart('/'))".TrimEnd('/')
+  }
+}
+
+$missingRequiredUrls = @($requiredUrls | Where-Object {
+  $requiredUrl = $_
+  -not ($locs | Where-Object { $_.TrimEnd('/') -eq $requiredUrl } | Select-Object -First 1)
+})
+if ($missingRequiredUrls.Count -gt 0) {
+  Add-Error "sitemap.xml is missing required URLs: $($missingRequiredUrls -join ', ')."
 }
 
 $urlResults = foreach ($loc in $locs) {
@@ -95,7 +138,7 @@ if (-not $contactResult -or -not $contactResult.HasContactEmail) {
 }
 
 if ($errors.Count -gt 0) {
-  $errors | ForEach-Object { Write-Error $_ }
+  $errors | ForEach-Object { Write-Error $_ -ErrorAction Continue }
   exit 1
 }
 
@@ -109,4 +152,6 @@ if ($errors.Count -gt 0) {
   RequiredStatuses = 'all 200'
   ContactEmailPresent = [bool]$contactResult.HasContactEmail
   AmazonStatementPresentOnAllPages = $true
+  ExpectedSitemapUrls = if ($ExpectedSitemapUrls -gt 0) { $ExpectedSitemapUrls } else { $null }
+  RequiredPublicPaths = @($requiredPathInputs)
 }

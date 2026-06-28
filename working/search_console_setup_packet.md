@@ -1,6 +1,6 @@
 # Search Console And Analytics Setup Packet
 
-Last updated: 2026-06-23
+Last updated: 2026-06-28
 
 Purpose: make the post-launch Search Console and analytics setup repeatable for the public site.
 
@@ -14,7 +14,9 @@ The site is live at:
 https://tanhamazon.netlify.app
 ```
 
-Current local/public content status: 20/20 logged content pages are `Source-ready`; public verification passes for 29 sitemap URLs.
+Current local content status: 25/25 logged content pages are `Source-ready`; local static verification passes for 34 sitemap URLs.
+
+Current public status: Netlify still serves the older 29-URL deployment as of 2026-06-28. Deploy the latest source or refreshed ZIP before submitting the sitemap in Search Console.
 
 ## Inputs Needed
 
@@ -52,11 +54,11 @@ Submit:
 https://tanhamazon.netlify.app/sitemap.xml
 ```
 
-Before submitting, run:
+Before submitting, run these commands and confirm the public sitemap has 34 URLs:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 The verify script should pass without `-AllowLaunchPlaceholders`.
@@ -72,6 +74,11 @@ After sitemap submission, inspect these URLs:
 5. `/comparisons/compact-air-fryer-vs-toaster-oven/`
 6. `/guides/what-kitchen-appliances-do-i-need/`
 7. `/affiliate-disclosure/`
+8. `/best/compact-air-fryers-small-kitchens/`
+9. `/best/dish-drying-racks-small-kitchens/`
+10. `/best/small-coffee-makers-apartments/`
+11. `/best/compact-rice-cookers-two-people/`
+12. `/best/sink-organizers-small-kitchens/`
 
 ## Weekly Search Console Routine
 

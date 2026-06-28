@@ -1,6 +1,6 @@
 # Search Console Day 0 Checklist
 
-Last updated: 2026-06-23
+Last updated: 2026-06-28
 
 ## Muc tieu
 
@@ -14,13 +14,15 @@ Sau khi lam xong, sitemap se duoc submit va cac URL uu tien se duoc inspect/requ
 
 ## Trang thai hien tai
 
-- Public site: live.
-- Public verifier: passed.
+- Public site: live, but still serving the older 29-URL deploy as of 2026-06-28.
+- Public verifier: passed for the currently deployed 29 sitemap URLs.
 - Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`.
-- Sitemap URLs: 29.
+- Public sitemap URLs: 29.
+- Latest local source sitemap URLs: 34.
+- Deploy blocker: `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` return 404 publicly until Netlify is updated.
 - Contact email: `dotuananh20082006@gmail.com`.
 - Affiliate links: 0.
-- Content pages: 20/20 `Source-ready`.
+- Content pages: 25/25 `Source-ready` in local source.
 
 ## Nguon chinh thuc da dung
 
@@ -74,7 +76,7 @@ https://tanhamazon.netlify.app/sitemap.xml
 
 ## Buoc 3 - Inspect P0 URLs
 
-Sau khi submit sitemap, dung URL Inspection cho P0 URLs:
+Chi submit/inspect sau khi Netlify public sitemap da co 34 URLs. Sau khi submit sitemap, dung URL Inspection cho P0 URLs:
 
 1. `https://tanhamazon.netlify.app/`
 2. `https://tanhamazon.netlify.app/guides/`
@@ -83,6 +85,11 @@ Sau khi submit sitemap, dung URL Inspection cho P0 URLs:
 5. `https://tanhamazon.netlify.app/comparisons/compact-air-fryer-vs-toaster-oven/`
 6. `https://tanhamazon.netlify.app/guides/what-kitchen-appliances-do-i-need/`
 7. `https://tanhamazon.netlify.app/affiliate-disclosure/`
+8. `https://tanhamazon.netlify.app/best/compact-air-fryers-small-kitchens/`
+9. `https://tanhamazon.netlify.app/best/dish-drying-racks-small-kitchens/`
+10. `https://tanhamazon.netlify.app/best/small-coffee-makers-apartments/`
+11. `https://tanhamazon.netlify.app/best/compact-rice-cookers-two-people/`
+12. `https://tanhamazon.netlify.app/best/sink-organizers-small-kitchens/`
 
 Neu URL chua co trong Google index, bam `Request indexing` neu nut nay kha dung.
 
