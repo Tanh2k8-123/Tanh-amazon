@@ -203,10 +203,12 @@ a:hover {
 }
 
 .hero-media {
+  display: grid;
   position: relative;
 }
 
 .hero-image {
+  grid-area: 1 / 1;
   overflow: hidden;
   border: 1px solid rgba(32, 33, 29, 0.16);
   border-radius: 10px;
@@ -221,9 +223,11 @@ a:hover {
 }
 
 .research-note {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
+  grid-area: 1 / 1;
+  align-self: end;
+  justify-self: end;
+  position: relative;
+  margin: 24px;
   width: min(360px, calc(100% - 48px));
   overflow: hidden;
   border: 1px solid var(--line);
@@ -244,7 +248,7 @@ a:hover {
   padding: 11px 12px;
   border-bottom: 1px solid var(--line);
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
   line-height: 1.35;
 }
 
@@ -540,11 +544,9 @@ a:hover {
   }
 
   .research-note {
-    position: relative;
-    right: auto;
-    bottom: auto;
+    grid-area: auto;
     width: 100%;
-    margin-top: 16px;
+    margin: 16px 0 0;
   }
 
   .grid {
