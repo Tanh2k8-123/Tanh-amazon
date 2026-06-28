@@ -42,7 +42,7 @@ Hoan tat local changes cho trang `/best/compact-rice-cookers-two-people/`, dam b
 - [x] Browser QA desktop cho rice cooker page.
 - [x] Browser QA mobile cho rice cooker page.
 - [x] Tao deploy ZIP moi.
-- [ ] Commit va push.
+- [x] Commit va push.
 
 ## QA Commands
 
@@ -73,3 +73,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\prepare-launch.ps1
 - 2026-06-28: Affiliate readiness audit found 0 Amazon affiliate links and 0 potential manual Amazon data mentions.
 - 2026-06-28: Browser QA passed on desktop and mobile; mobile menu toggled from `aria-expanded=false` to `true` with no console warnings/errors and no horizontal overflow.
 - 2026-06-28: Deploy ZIP regenerated at `working/deploy/tanhs-compact-kitchen-site.zip`.
+- 2026-06-28: Commit `6d79669` pushed to GitHub `main`.

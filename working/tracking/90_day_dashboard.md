@@ -34,7 +34,7 @@ Last updated: 2026-06-28
 
 | Priority | Action | Owner | Status |
 | --- | --- | --- | --- |
-| P0 | Commit and push current source updates. | Codex | In progress |
+| P0 | Commit and push current source updates. | Codex | Done in `6d79669` |
 | P0 | Deploy latest source to Netlify. | Owner/Codex if access exists | Pending external access |
 | P0 | Verify public `/sitemap.xml` has 34 URLs. | Owner/Codex after deploy | Pending deploy |
 | P0 | Set up Search Console and submit sitemap. | Owner | Pending Google access |
