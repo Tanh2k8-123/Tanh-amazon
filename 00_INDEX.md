@@ -19,6 +19,15 @@ Lam theo thu tu file. Moi file la mot task doc lap, co input, output, SOP, check
 8. [08_VIDEO_STOREFRONT_AND_SCALING.md](08_VIDEO_STOREFRONT_AND_SCALING.md) - Mo rong YouTube, Storefront, Shoppable Videos.
 9. [09_OPERATING_ROADMAP.md](09_OPERATING_ROADMAP.md) - Backlog 24h, 7 ngay, 30 ngay, 90 ngay, 6 thang.
 10. [10_TEMPLATES.md](10_TEMPLATES.md) - Mau disclosure, content brief, keyword table, product scorecard, weekly report.
+11. [11_FINALIZE_RICE_COOKER_PAGE.md](11_FINALIZE_RICE_COOKER_PAGE.md) - Audit, QA, deploy ZIP, commit/push trang rice cooker.
+12. [12_SINK_ORGANIZER_MONEY_PAGE.md](12_SINK_ORGANIZER_MONEY_PAGE.md) - Publish money page sink organizer sau khi re-check sources.
+13. [13_NETLIFY_DEPLOYMENT_AND_PUBLIC_QA.md](13_NETLIFY_DEPLOYMENT_AND_PUBLIC_QA.md) - Dua source moi len Netlify va QA public URLs.
+14. [14_GOOGLE_SEARCH_CONSOLE_DAY0.md](14_GOOGLE_SEARCH_CONSOLE_DAY0.md) - Verify Search Console va submit sitemap.
+15. [15_AMAZON_ASSOCIATES_APPLICATION.md](15_AMAZON_ASSOCIATES_APPLICATION.md) - Chuan bi va nop Amazon Associates US.
+16. [16_AFFILIATE_LINK_INSERTION_SOP.md](16_AFFILIATE_LINK_INSERTION_SOP.md) - Them affiliate links dung policy sau khi workflow san sang.
+17. [17_NEXT_CONTENT_WAVE.md](17_NEXT_CONTENT_WAVE.md) - Research va publish content wave tiep theo.
+18. [18_PRODUCT_TESTING_AND_ORIGINAL_MEDIA.md](18_PRODUCT_TESTING_AND_ORIGINAL_MEDIA.md) - Chon san pham test/chup anh va nang cap page.
+19. [19_90_DAY_OPERATING_DASHBOARD.md](19_90_DAY_OPERATING_DASHBOARD.md) - Dashboard van hanh 90 ngay.
 
 ## Roadmap tong quan
 

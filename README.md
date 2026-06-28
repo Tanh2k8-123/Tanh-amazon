@@ -27,13 +27,13 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 
 ## Current launch state
 
-- 29 HTML pages in `site/`
-- 20 source-ready non-affiliate content pages
+- 34 HTML pages in `site/`
+- 25 source-ready non-affiliate content pages
 - Required pages: About, Contact, Privacy Policy, Affiliate Disclosure
 - Sitemap and robots file included
 - Public URL: `https://tanhamazon.netlify.app`
 - 66 keyword candidates
-- 30 product candidates
+- 34 product candidates
 - 20 content briefs
 - Compliance source audit: `working/compliance_source_audit_2026-06-22.md`
 - Launch/content scripts: `scripts/prepare-launch.ps1`, `scripts/verify-static-site.ps1`, `scripts/verify-public-site.ps1`, `scripts/audit-content.ps1`
