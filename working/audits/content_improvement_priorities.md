@@ -6,8 +6,8 @@ Last generated: 2026-06-28
 
 | Metric | Count |
 | --- | --- |
-| HTML pages | 31 |
-| Content-log pages | 22 |
+| HTML pages | 32 |
+| Content-log pages | 23 |
 | Launch blockers | 0 |
 | Content pages needing article-body internal links | 0 |
 | Content pages needing expansion before heavy promotion | 0 |

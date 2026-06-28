@@ -23,18 +23,19 @@
 - [x] Decide image source plan.
 - [x] Write draft `best for` and `skip if` for each candidate.
 - [x] Confirm no Amazon images, prices, ratings, or reviews are copied manually.
+- [x] Confirm current manufacturer availability signals before publication.
 
 ## Candidate Evidence Summary
 
 | Candidate | Style | Footprint / fit evidence | Cleaning / filter evidence | Evidence status |
 | --- | --- | --- | --- | --- |
-| Mr. Coffee 5-Cup Programmable Mini Brew | Compact drip | Official page lists dimensions, 25 oz capacity, cord length, and reusable nylon filter. | Lift-and-clean basket, reusable filter, vinegar descaling, 2-hour auto shutoff. | Source documented |
-| Keurig K-Mini | Pod single-serve | Official page/manual list 12.1 H x 4.5 W x 11.3 D inches, 16.8-inch open height, one-cup reservoir, and 6-12 oz brew range. | Manual covers reservoir/drip-tray care, removable pod-holder funnel, entrance/exit needle cleaning, two water-only rinse cycles, and descaling every three months. | Source documented |
-| Nespresso Essenza Mini C30 | Compact capsule espresso | Official specs/manual list 3.3-inch width, 20.3 oz removable water tank, and capsule container capacity. | Manual covers daily drip tray/capsule container cleaning and descaling. | Source documented |
-| Hamilton Beach The Scoop | Pod-free single-serve | Official page lists compact dimensions, 8 oz and 14 oz brew sizes, and adjustable stand. | Steel mesh scoop filter included; no paper filters or pods. | Source documented |
-| AeroPress Original | Manual quiet brewer | Official page lists compact dimensions, 10 oz capacity, mug fit, and drawer-friendly storage. | Top-rack dishwasher-safe; standard paper micro-filters required. | Source documented |
-| Breville Bambino | Compact espresso upgrade | Official specs/manual list compact width, 47 oz removable water tank, and 54 mm portafilter. | Manual covers cleaning, descaling, steam-wand care, and dishwasher limitations. | Source documented |
-| Mr. Coffee Mini Brew Switch 5-Cup | Simple mini drip | Official page confirms 25 oz / two 12 oz cup positioning, but exact dimensions were not found in current pass. | Lift-and-clean basket; reusable filter sold separately. | Hold - dimensions missing |
+| Mr. Coffee 5-Cup Programmable Mini Brew | Compact drip | Official page lists dimensions, 25 oz capacity, cord length, and reusable nylon filter. | Lift-and-clean basket, reusable filter, vinegar descaling, 2-hour auto shutoff. | Hold; manufacturer page showed out-of-stock messaging on 2026-06-28 |
+| Keurig K-Mini | Pod single-serve | Official page/manual list 12.1 H x 4.5 W x 11.3 D inches, 16.8-inch open height, one-cup reservoir, and 6-12 oz brew range. | Manual covers reservoir/drip-tray care, removable pod-holder funnel, entrance/exit needle cleaning, two water-only rinse cycles, and descaling every three months. | Current pick; active product page on 2026-06-28, verify color/kit purchase status before monetization |
+| Nespresso Essenza Mini C30 | Compact capsule espresso | Official specs/manual list 3.3-inch width, 20.3 oz removable water tank, and capsule container capacity. | Manual covers daily drip tray/capsule container cleaning and descaling. | Capsule finalist; static source review did not expose a clean availability signal on 2026-06-28 |
+| Hamilton Beach The Scoop | Pod-free single-serve | Official page lists compact dimensions, 8 oz and 14 oz brew sizes, and adjustable stand. | Steel mesh scoop filter included; no paper filters or pods. | Hold; manufacturer page showed no-longer-available messaging on 2026-06-28 |
+| AeroPress Original | Manual quiet brewer | Official page lists compact dimensions, 10 oz capacity, mug fit, and drawer-friendly storage. | Top-rack dishwasher-safe; standard paper micro-filters required. | Current pick; product page active on 2026-06-28 |
+| Breville Bambino | Compact espresso upgrade | Official specs/manual list compact width, 47 oz removable water tank, and 54 mm portafilter. | Manual covers cleaning, descaling, steam-wand care, and dishwasher limitations. | Current pick; active purchase language on 2026-06-28 |
+| Mr. Coffee Mini Brew Switch 5-Cup | Simple mini drip | Official page confirms 25 oz / two 12 oz cup positioning, but exact dimensions were not found in current pass. | Lift-and-clean basket; reusable filter sold separately. | Hold; dimensions missing and manufacturer page showed out-of-stock messaging on 2026-06-28 |
 
 ## Official / Reliable Source URLs
 
@@ -51,17 +52,18 @@
 - Breville Bambino manual: `https://assets.breville.com/BES450/BES450_USCM_IB_I21_FA_WEB.pdf`
 - Mr. Coffee Mini Brew Switch: `https://www.mrcoffee.com/coffee-makers/5-cup-coffee-makers/mr.-coffee-mini-brew-switch-coffee-maker-5-cup-coffee-maker-black/SP_4020438.html`
 
-## Draft Positioning Notes
+## Publication Positioning Notes
 
-- Do not call these recommendations yet. They are candidates only.
-- First-pass finalist set: Mr. Coffee 5-Cup Programmable Mini Brew, Hamilton Beach The Scoop, AeroPress Original, Nespresso Essenza Mini C30, Keurig K-Mini.
+- Published source page: `/best/small-coffee-makers-apartments/`.
+- Current pick set: Keurig K-Mini, AeroPress Original, Breville Bambino.
+- Capsule finalist needing availability re-check: Nespresso Essenza Mini C30.
 - Breville Bambino is a compact espresso upgrade candidate, but it should be framed as a workflow trade-off because grinder, milk, steam wand, tamping, and cleanup storage matter in apartments.
-- Hold Mr. Coffee Mini Brew Switch until exact exterior dimensions are verified.
+- Hold Mr. Coffee 5-Cup Programmable Mini Brew, Hamilton Beach The Scoop, and Mr. Coffee Mini Brew Switch based on 2026-06-28 availability/dimensions checks.
 - Do not use Amazon images, prices, star ratings, review snippets, or seller copy.
 
-## Outstanding Evidence Before Publication
+## Outstanding Evidence After Publication
 
-- Confirm current availability from allowed sources immediately before drafting.
+- Re-check current availability from allowed sources before adding affiliate links.
 - Verify Amazon US eligibility only after Associates approval.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
 - Re-score candidates after checking real apartment workflows: counter width, cabinet clearance, mug height, filter/pod storage, water access, noise, and cleanup.
