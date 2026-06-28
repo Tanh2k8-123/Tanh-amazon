@@ -26,14 +26,15 @@ These pages exist in `site/` and can be deployed once the hosting target is chos
 | Ready in source | `/guides/countertop-compost-bin-apartment-guide/` | Buying guide | No |
 | Ready in source | `/guides/portable-induction-cooktop-apartment-guide/` | Buying guide | No |
 | Ready in source | `/guides/small-kitchen-counter-organization-ideas/` | Organization guide | No |
+| Ready in source | `/best/compact-air-fryers-small-kitchens/` | Documentation-based best list | No |
 
-Current count: 20 non-affiliate content pages exist in source. The latest audit marks all 20 as `Source-ready`.
+Current count: 21 non-affiliate content pages exist in source. The latest content audit confirms all 21 are `Source-ready`.
 
 ## First 5 article plan
 
 | Article | Current status | Next action |
 | --- | --- | --- |
-| Best Compact Air Fryers for Small Kitchens | Brief ready | Needs product/model research and evidence before publishing |
+| Best Compact Air Fryers for Small Kitchens | Ready in source | Deploy the latest GitHub commit and submit through Search Console |
 | How to Choose an Air Fryer Size for Two People | Ready in source | Deploy with site |
 | Best Dish Drying Racks for Small Kitchens | Brief ready | Needs product/model research and visuals |
 | Best Small Coffee Makers for Apartments | Brief ready | Needs product/model research and evidence |
@@ -41,18 +42,19 @@ Current count: 20 non-affiliate content pages exist in source. The latest audit 
 | What Kitchen Appliances Do I Really Need? | Ready in source | Deploy with site |
 | How to Organize a Small Kitchen Without a Pantry | Ready in source | Deploy with site |
 
-## Why the best-list pages are not published yet
+## Why the remaining best-list pages are not published yet
 
-The best-list pages should not go live as thin affiliate-style content. They need product selection, evidence notes, image/source decisions, and compliance review before publication.
+The remaining best-list pages should not go live as thin affiliate-style content. They need product selection, evidence notes, image/source decisions, availability checks, and compliance review before publication.
 
 ## Next content actions
 
-- [ ] Research product models for compact air fryer article.
+- [x] Research product models for compact air fryer article.
 - [ ] Research product models for dish drying rack article.
 - [ ] Research product models for small coffee maker article.
 - [ ] Research product models for compact blender, manual grinder, compost bin, and portable induction cooktop money pages.
 - [ ] Decide whether Tanh can test or photograph any product firsthand.
-- [ ] Publish best-list pages only after evidence and compliance review.
+- [x] Publish the compact air fryer best-list source page after evidence and compliance review.
+- [ ] Publish the remaining best-list pages only after evidence and compliance review.
 - [ ] Use `working/amazon_associates_application_packet.md` before applying to Amazon Associates.
 
 ## Latest content audit

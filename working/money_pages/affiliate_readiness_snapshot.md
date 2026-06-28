@@ -1,6 +1,6 @@
 # Affiliate Readiness Snapshot
 
-Last updated: 2026-06-24
+Last updated: 2026-06-28
 
 Command:
 
@@ -13,9 +13,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\audit-affiliate-read
 | Metric | Value |
 | --- | --- |
 | Status | `pre-application-ready-except-external-steps` |
-| HTML files | 29 |
-| Content pages | 20 |
-| Source-ready content pages | 20 |
+| HTML files | 30 |
+| Content pages | 21 |
+| Source-ready content pages | 21 |
 | Money pages planned | 5 |
 | Evidence rows | 34 |
 | Evidence rows source-documented | 29 |
@@ -30,13 +30,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\audit-affiliate-read
 
 ## Interpretation
 
-Local content, compliance scaffolding, and evidence planning are ready. Across the first-wave money pages, the tracker now has 34 product-evidence rows: 29 source-documented, none needing official verification, and 5 intentionally on hold for availability or missing dimensions. The compact-air-fryer, dish-drying-rack, small-coffee-maker, compact-rice-cooker, and sink-organizer pages all have first-pass candidate evidence. Instant Pot and Ninja operating-clearance guidance is documented from official manuals; Ninja's current manual provides qualitative guidance rather than a numeric distance. The Keurig K-Mini has model-specific official evidence for dimensions, one-cup reservoir workflow, cleaning, needle care, and descaling. The remaining OXO and simplehuman sink-organizer candidates now use corrected official product pages and retailer specifications. Do not apply to Amazon Associates yet because Search Console has not been submitted and current availability still needs a final check immediately before money-page publication.
+Local content, compliance scaffolding, and evidence planning are ready. The source site now includes 21 non-affiliate content pages, including the first documentation-based money page: `/best/compact-air-fryers-small-kitchens/`. Across the first-wave money pages, the tracker has 34 product-evidence rows: 29 source-documented, none needing official verification, and 5 intentionally on hold for availability or missing dimensions. The compact-air-fryer, dish-drying-rack, small-coffee-maker, compact-rice-cooker, and sink-organizer pages all have first-pass candidate evidence. The compact-air-fryer page currently treats Instant Pot 4QT VORTEX Mini and Chefman Compact 2-Quart as current picks, with COSORI, Dash, Ninja, and Beautiful on watchlist/hold based on 2026-06-28 manufacturer availability and documentation checks. Do not apply to Amazon Associates yet because Search Console has not been submitted and the public Netlify project still needs Git-based deployment verification.
 
 ## Next Actions
 
-1. Complete Search Console Day 0 setup.
-2. Confirm current availability and Amazon US eligibility for dish rack finalists after Associates approval.
-3. Confirm current availability from allowed sources immediately before drafting money pages.
-4. Run `scripts\audit-affiliate-readiness.ps1` again.
-5. Do a final live-site compliance review.
+1. Connect the existing Netlify project to GitHub or upload the latest deploy ZIP so commit output reaches the public site.
+2. Complete Search Console Day 0 setup.
+3. Confirm current availability and Amazon US eligibility for remaining finalists after Associates approval.
+4. Confirm current availability from allowed sources immediately before each future money-page publication.
+5. Run `scripts\audit-affiliate-readiness.ps1` again after live deployment/Search Console setup.
 6. Apply to Amazon Associates only after the above is complete.

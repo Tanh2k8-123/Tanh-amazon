@@ -24,6 +24,8 @@
 - [x] Decide image source plan.
 - [x] Write draft `best for` and `skip if` for each candidate.
 - [x] Confirm no Amazon images, prices, ratings, or reviews are copied manually.
+- [x] Re-check manufacturer availability signals on 2026-06-24.
+- [x] Re-check manufacturer availability signals on 2026-06-28.
 
 ## Candidate Evidence Summary
 
@@ -62,14 +64,17 @@
 
 ## Draft Positioning Notes
 
-- Do not call these recommendations yet. They are candidates only.
-- First-pass finalist set: Chefman 2 qt, COSORI 2.1 qt, Dash 2.6 qt, Instant Pot 4 qt.
-- Stronger capacity candidates: Instant 4 qt and Ninja 5 qt.
+- Published current picks: Instant Pot 4 qt and Chefman 2 qt.
+- COSORI 2.1 qt moved to the watchlist because the manufacturer page showed listed colors sold out or unavailable on 2026-06-28.
+- Dash 2.6 qt moved to the watchlist because the manufacturer page showed sold out on 2026-06-28.
+- Ninja 5 qt moved to the watchlist because the manufacturer page showed a back-in-stock notification prompt on 2026-06-28.
 - Hold Beautiful until official dimensions are found from the manufacturer, official manual, or a reliable non-Amazon source.
 - Do not use Amazon images, prices, star ratings, review snippets, or seller copy.
 
-## Outstanding Evidence Before Publication
+## Publication Status
 
-- Confirm current availability from allowed sources immediately before drafting the article.
+- Source article created at `/best/compact-air-fryers-small-kitchens/`.
+- The article states that the conclusions are documentation-based rather than hands-on testing.
+- Re-check availability immediately before adding any future purchase links.
 - Add original photos, manufacturer-permitted images, or Amazon PA API images only after approval.
-- Re-score candidates immediately before drafting after current availability and image evidence are complete.
+- Re-score candidates before the first monetized update.
