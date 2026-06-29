@@ -9,7 +9,7 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 - Market: Amazon US
 - Niche: Home/Kitchen
 - Sub-niche: compact kitchen gear for apartments and small homes
-- Hosting target: Netlify Free or Cloudflare Pages Free
+- Hosting target: Cloudflare Pages Free now; Netlify Free only if deploy credit/build access returns
 - Budget: 0 USD initially
 
 ## Important folders
@@ -31,7 +31,8 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 - 25 source-ready non-affiliate content pages
 - Required pages: About, Contact, Privacy Policy, Affiliate Disclosure
 - Sitemap and robots file included
-- Public URL: `https://tanhamazon.netlify.app`
+- Current stale public URL: `https://tanhamazon.netlify.app`
+- Target free URL: `https://tanhs-compact-kitchen.pages.dev` if the Cloudflare project name is available
 - 66 keyword candidates
 - 34 product candidates
 - 20 content briefs
@@ -51,21 +52,24 @@ Static-site foundation and operating system for a zero-budget Amazon Affiliate p
 
 ## Public launch state
 
-- Public Netlify deployment is live.
+- Public Netlify deployment is live but stale.
 - Contact email is set to `dotuananh20082006@gmail.com`.
-- `robots.txt` and `sitemap.xml` use `https://tanhamazon.netlify.app`.
-- Public verification passes for all 29 currently deployed sitemap URLs.
-- Latest source now has 34 sitemap URLs and needs a Netlify deploy before the new money pages are public.
-- Next external step: deploy latest source, then connect Google Search Console and submit the sitemap.
+- `robots.txt` and `sitemap.xml` now target `https://tanhs-compact-kitchen.pages.dev`.
+- Public Netlify verification passes for all 29 currently deployed sitemap URLs, but that host is no longer the target.
+- Latest source now has 34 sitemap URLs and needs a Cloudflare Pages deploy before the new money pages are public.
+- Netlify deploys are out of credit/blocked, so the next external step is Cloudflare Pages Free with a `*.pages.dev` URL.
+- After Cloudflare deploys, connect Google Search Console and submit the Cloudflare sitemap.
 
 Quick status check:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 For the exact handoff steps, use `working/deploy/LAUNCH_HANDOFF.md`.
+
+Cloudflare migration handoff: `working/cloudflare_pages_free_migration.md`.
 
 ## Do not do yet
 

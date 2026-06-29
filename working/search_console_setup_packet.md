@@ -6,17 +6,17 @@ Purpose: make the post-launch Search Console and analytics setup repeatable for 
 
 ## Current Decision
 
-Netlify deploy is the next external setup step. Search Console should follow only after the public sitemap has 34 URLs.
+Cloudflare Pages deploy is the next external setup step. Search Console should follow only after the public sitemap has 34 URLs.
 
 The site is live at:
 
 ```text
-https://tanhamazon.netlify.app
+https://tanhs-compact-kitchen.pages.dev
 ```
 
 Current local content status: 25/25 logged content pages are `Source-ready`; local static verification passes for 34 sitemap URLs.
 
-Current public status: Netlify still serves the older 29-URL deployment as of 2026-06-28. Deploy the latest source or refreshed ZIP before submitting the sitemap in Search Console.
+Current public status: source is prepared for Cloudflare Pages at `https://tanhs-compact-kitchen.pages.dev`, but the Cloudflare project still needs to be created/deployed before submitting the sitemap in Search Console.
 
 ## Inputs Needed
 
@@ -31,7 +31,7 @@ Current public status: Netlify still serves the older 29-URL deployment as of 20
 Use a URL-prefix property:
 
 ```text
-https://tanhamazon.netlify.app/
+https://tanhs-compact-kitchen.pages.dev/
 ```
 
 If a custom domain is purchased later, add a Domain property for the root domain.
@@ -44,21 +44,21 @@ Preferred:
 2. HTML meta tag in `site/index.html`.
 3. DNS verification after buying a custom domain.
 
-Lean-first note: for a free Netlify/Cloudflare subdomain, URL-prefix verification is usually the fastest.
+Lean-first note: for a free Cloudflare subdomain, URL-prefix verification is usually the fastest.
 
 ## Sitemap Submission
 
 Submit:
 
 ```text
-https://tanhamazon.netlify.app/sitemap.xml
+https://tanhs-compact-kitchen.pages.dev/sitemap.xml
 ```
 
 Before submitting, run these commands and confirm the public sitemap has 34 URLs:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-static-site.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhamazon.netlify.app" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhs-compact-kitchen.pages.dev" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
 ```
 
 The verify script should pass without `-AllowLaunchPlaceholders`.

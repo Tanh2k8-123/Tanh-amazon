@@ -11,7 +11,7 @@ Do not apply yet.
 Reason:
 
 - Search Console is not connected yet.
-- Latest 34-URL source is not deployed to Netlify yet; the public sitemap still has 29 URLs.
+- Latest 34-URL source is prepared for Cloudflare Pages, but the Cloudflare project is not deployed yet.
 - There are no affiliate links yet, which is intentional.
 - Product evidence has been collected for the first five money pages, but affiliate links are still intentionally absent.
 
@@ -43,7 +43,7 @@ Apply only after latest source is deployed, Search Console is submitted, the liv
 Use the final HTTPS URL only.
 
 ```text
-https://tanhamazon.netlify.app
+https://tanhs-compact-kitchen.pages.dev
 ```
 
 ### Store ID / Tracking ID Idea
@@ -112,8 +112,8 @@ These pages exist as non-affiliate source pages after evidence collection. Do no
 | 1 | Best compact air fryers for small kitchens | Source-ready, no affiliate links. |
 | 2 | Best dish drying racks for small kitchens | Source-ready, no affiliate links. |
 | 3 | Best small coffee makers for apartments | Source-ready, no affiliate links. |
-| 4 | Best compact rice cookers for two people | Source-ready, pending public Netlify deploy. |
-| 5 | Best sink organizers for small kitchens | Source-ready, pending public Netlify deploy. |
+| 4 | Best compact rice cookers for two people | Source-ready, pending public Cloudflare deploy. |
+| 5 | Best sink organizers for small kitchens | Source-ready, pending public Cloudflare deploy. |
 
 Evidence templates:
 

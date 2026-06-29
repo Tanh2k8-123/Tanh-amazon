@@ -6,6 +6,8 @@ Last updated: 2026-06-28
 
 - Site static da san sang trong `site/`.
 - Public site da live: `https://tanhamazon.netlify.app`, nhung dang phuc vu deployment cu.
+- Netlify deploys dang het credit/bi skipped, nen dung Cloudflare Pages Free lam duong publish tiep theo.
+- Target free URL neu project name con trong: `https://tanhs-compact-kitchen.pages.dev`.
 - File deploy ZIP: `working/deploy/tanhs-compact-kitchen-site.zip`.
 - Latest local source: 34 HTML pages va 34 sitemap URLs.
 - Current public Netlify deploy: 29 sitemap URLs; rice cooker va sink organizer money pages dang 404 public cho den khi deploy ZIP/Git moi.
@@ -17,11 +19,13 @@ Last updated: 2026-06-28
 
 ## Con can Tanh thuc hien tiep
 
-1. Deploy latest source len Netlify bang GitHub connection hoac upload `working/deploy/tanhs-compact-kitchen-site.zip`.
-2. Chay public verification 34-URL gate.
-3. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
-4. Submit sitemap `https://tanhamazon.netlify.app/sitemap.xml`.
-5. Inspect cac URL uu tien trong `working/search_console_setup_packet.md`.
+1. Tao Cloudflare Pages project mien phi, uu tien project name `tanhs-compact-kitchen`.
+2. Chay `scripts\prepare-cloudflare-pages.ps1` voi project name that Cloudflare chap nhan.
+3. Deploy latest source len Cloudflare Pages bang GitHub integration hoac Direct Upload.
+4. Chay public verification 34-URL gate tren URL `*.pages.dev`.
+5. Tao Google Search Console URL-prefix property cho URL Cloudflare moi.
+6. Submit sitemap Cloudflare moi.
+7. Inspect cac URL uu tien trong `working/search_console_setup_packet.md`.
 
 Public contact email hien tai: `dotuananh20082006@gmail.com`.
 
@@ -31,12 +35,38 @@ GitHub repo da day len:
 https://github.com/Tanh2k8-123/Tanh-amazon
 ```
 
-## Netlify tu GitHub
+## Cloudflare Pages Free
+
+Recommended vi Netlify dang het deploy credit/bi skipped.
+
+Settings:
+
+```text
+Project name: tanhs-compact-kitchen neu available
+Framework preset: None
+Build command: de trong
+Build output directory: site
+```
+
+Prepare source sau khi co project name:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\prepare-cloudflare-pages.ps1 -ProjectName "tanhs-compact-kitchen" -ContactEmail "dotuananh20082006@gmail.com"
+```
+
+Verify sau deploy:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify-public-site.ps1 -PublicUrl "https://tanhs-compact-kitchen.pages.dev" -ContactEmail "dotuananh20082006@gmail.com" -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\launch-status.ps1 -PublicUrl "https://tanhs-compact-kitchen.pages.dev" -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"
+```
+
+## Netlify tu GitHub, fallback only
 
 Da thuc hien:
 
 1. GitHub repo: `Tanh2k8-123/Tanh-amazon`.
-2. Public URL: `https://tanhamazon.netlify.app`.
+2. Public URL cu: `https://tanhamazon.netlify.app`.
 3. Cau hinh:
    - Build command: de trong.
    - Publish directory: `site`.
@@ -66,9 +96,9 @@ Trang thai launch duoc xem la sach khi:
 
 ## Sau khi public
 
-1. Xac nhan public verification 34-URL gate pass.
-2. Tao Google Search Console URL-prefix property cho `https://tanhamazon.netlify.app/`.
-3. Submit `https://tanhamazon.netlify.app/sitemap.xml`.
+1. Xac nhan public verification 34-URL gate pass tren Cloudflare URL.
+2. Tao Google Search Console URL-prefix property cho URL Cloudflare moi.
+3. Submit sitemap Cloudflare moi.
 4. Inspect cac URL dau tien trong `working/search_console_setup_packet.md`.
 5. Theo doi KPI hang tuan trong `working/tracking/search_console_weekly_kpi.csv`.
 6. Chua apply Amazon Associates cho den khi site public on dinh va da review lai compliance.

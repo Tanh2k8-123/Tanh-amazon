@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tanhamazon.netlify.app/sitemap.xml
+Sitemap: https://tanhs-compact-kitchen.pages.dev/sitemap.xml

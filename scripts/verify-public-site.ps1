@@ -1,6 +1,6 @@
 param(
   [ValidatePattern('^https://[^/]+/?$')]
-  [string]$PublicUrl = 'https://tanhamazon.netlify.app',
+  [string]$PublicUrl = 'https://tanhs-compact-kitchen.pages.dev',
 
   [string]$ContactEmail = 'dotuananh20082006@gmail.com',
 

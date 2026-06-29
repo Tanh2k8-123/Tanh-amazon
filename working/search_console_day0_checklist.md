@@ -7,19 +7,19 @@ Last updated: 2026-06-28
 Ket noi Google Search Console cho site public:
 
 ```text
-https://tanhamazon.netlify.app/
+https://tanhs-compact-kitchen.pages.dev/
 ```
 
 Sau khi lam xong, sitemap se duoc submit va cac URL uu tien se duoc inspect/request indexing neu Google cho phep.
 
 ## Trang thai hien tai
 
-- Public site: live, but still serving the older 29-URL deploy as of 2026-06-28.
+- Public site: pending Cloudflare Pages deploy as of 2026-06-28.
 - Public verifier: passed for the currently deployed 29 sitemap URLs.
-- Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`.
+- Sitemap: `https://tanhs-compact-kitchen.pages.dev/sitemap.xml`.
 - Public sitemap URLs: 29.
 - Latest local source sitemap URLs: 34.
-- Deploy blocker: `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` return 404 publicly until Netlify is updated.
+- Deploy blocker: `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` are not public until Cloudflare Pages is deployed.
 - Contact email: `dotuananh20082006@gmail.com`.
 - Affiliate links: 0.
 - Content pages: 25/25 `Source-ready` in local source.
@@ -47,7 +47,7 @@ Sau khi lam xong, sitemap se duoc submit va cac URL uu tien se duoc inspect/requ
 4. Nhap chinh xac:
 
 ```text
-https://tanhamazon.netlify.app/
+https://tanhs-compact-kitchen.pages.dev/
 ```
 
 5. Lam theo verification ma Google dua ra.
@@ -58,7 +58,7 @@ Ghi chu: neu Google yeu cau HTML file hoac meta tag, hay dua file/tag cho Codex 
 
 Trong Search Console:
 
-1. Mo property `https://tanhamazon.netlify.app/`.
+1. Mo property `https://tanhs-compact-kitchen.pages.dev/`.
 2. Vao `Sitemaps`.
 3. Submit:
 
@@ -69,27 +69,27 @@ sitemap.xml
 Hoac full URL neu UI yeu cau:
 
 ```text
-https://tanhamazon.netlify.app/sitemap.xml
+https://tanhs-compact-kitchen.pages.dev/sitemap.xml
 ```
 
 4. Ghi ngay submit vao `working/tracking/indexing_tracker.csv`.
 
 ## Buoc 3 - Inspect P0 URLs
 
-Chi submit/inspect sau khi Netlify public sitemap da co 34 URLs. Sau khi submit sitemap, dung URL Inspection cho P0 URLs:
+Chi submit/inspect sau khi Cloudflare public sitemap da co 34 URLs. Sau khi submit sitemap, dung URL Inspection cho P0 URLs:
 
-1. `https://tanhamazon.netlify.app/`
-2. `https://tanhamazon.netlify.app/guides/`
-3. `https://tanhamazon.netlify.app/guides/small-kitchen-appliance-buying-guide/`
-4. `https://tanhamazon.netlify.app/guides/how-to-choose-air-fryer-size-two-people/`
-5. `https://tanhamazon.netlify.app/comparisons/compact-air-fryer-vs-toaster-oven/`
-6. `https://tanhamazon.netlify.app/guides/what-kitchen-appliances-do-i-need/`
-7. `https://tanhamazon.netlify.app/affiliate-disclosure/`
-8. `https://tanhamazon.netlify.app/best/compact-air-fryers-small-kitchens/`
-9. `https://tanhamazon.netlify.app/best/dish-drying-racks-small-kitchens/`
-10. `https://tanhamazon.netlify.app/best/small-coffee-makers-apartments/`
-11. `https://tanhamazon.netlify.app/best/compact-rice-cookers-two-people/`
-12. `https://tanhamazon.netlify.app/best/sink-organizers-small-kitchens/`
+1. `https://tanhs-compact-kitchen.pages.dev/`
+2. `https://tanhs-compact-kitchen.pages.dev/guides/`
+3. `https://tanhs-compact-kitchen.pages.dev/guides/small-kitchen-appliance-buying-guide/`
+4. `https://tanhs-compact-kitchen.pages.dev/guides/how-to-choose-air-fryer-size-two-people/`
+5. `https://tanhs-compact-kitchen.pages.dev/comparisons/compact-air-fryer-vs-toaster-oven/`
+6. `https://tanhs-compact-kitchen.pages.dev/guides/what-kitchen-appliances-do-i-need/`
+7. `https://tanhs-compact-kitchen.pages.dev/affiliate-disclosure/`
+8. `https://tanhs-compact-kitchen.pages.dev/best/compact-air-fryers-small-kitchens/`
+9. `https://tanhs-compact-kitchen.pages.dev/best/dish-drying-racks-small-kitchens/`
+10. `https://tanhs-compact-kitchen.pages.dev/best/small-coffee-makers-apartments/`
+11. `https://tanhs-compact-kitchen.pages.dev/best/compact-rice-cookers-two-people/`
+12. `https://tanhs-compact-kitchen.pages.dev/best/sink-organizers-small-kitchens/`
 
 Neu URL chua co trong Google index, bam `Request indexing` neu nut nay kha dung.
 

@@ -7,14 +7,14 @@ Last updated: 2026-06-28
 Public URL:
 
 ```text
-https://tanhamazon.netlify.app
+https://tanhs-compact-kitchen.pages.dev
 ```
 
 ## Current 34-URL Re-Launch Gate
 
-Use this before Search Console submission because the public Netlify deploy is currently older than the source.
+Use this before Search Console submission because the Cloudflare Pages deploy is not live yet.
 
-- [ ] Deploy latest source or `working/deploy/tanhs-compact-kitchen-site.zip` to Netlify.
+- [ ] Deploy latest source or `working/deploy/tanhs-compact-kitchen-site.zip` to Cloudflare Pages.
 - [ ] Run `scripts\verify-static-site.ps1`.
 - [ ] Run `scripts\launch-status.ps1 -CheckPublic -ExpectedPublicSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"` and confirm `PublicDeployGatePassed` is `True`.
 - [ ] Run `scripts\verify-public-site.ps1 -ExpectedSitemapUrls 34 -RequiredPublicPathList "/best/compact-rice-cookers-two-people/,/best/sink-organizers-small-kitchens/"`.
@@ -29,8 +29,8 @@ Use this before Search Console submission because the public Netlify deploy is c
 - [x] Confirm `hello@example.com` is gone.
 - [x] Confirm `site/robots.txt` points to final sitemap URL.
 - [x] Confirm every `site/sitemap.xml` URL uses the final public URL.
-- [x] Deploy updated `site/` through Netlify Drop.
-- [ ] Connect the existing Netlify project to GitHub for automatic production deploys.
+- [ ] Deploy updated `site/` through Cloudflare Pages.
+- [ ] Connect Cloudflare Pages to GitHub for automatic production deploys.
 - [x] Run `scripts/verify-public-site.ps1` against the public URL.
 
 ## Day 1 - Verify Live Site

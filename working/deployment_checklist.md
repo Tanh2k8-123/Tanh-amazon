@@ -3,9 +3,10 @@
 ## Current local status
 
 - Static site source exists: `site/`
-- Public site is live: `https://tanhamazon.netlify.app`
-- Current deployment mode is Netlify Drop; Git-based continuous deployment is not connected yet.
+- Public Netlify site is live but stale: `https://tanhamazon.netlify.app`
+- Current deployment mode should move to Cloudflare Pages Free because Netlify deploys are out of credit/blocked.
 - Netlify config exists: `netlify.toml`
+- Cloudflare Pages headers exist: `site/_headers`
 - Local Git repository exists: `.git/`
 - Deploy ZIP exists: `working/deploy/tanhs-compact-kitchen-site.zip`
 - Launch preparation script exists: `scripts/prepare-launch.ps1`
@@ -52,12 +53,13 @@
 ## Public launch status
 
 - Contact email: `dotuananh20082006@gmail.com`
-- Public URL: `https://tanhamazon.netlify.app`
-- Sitemap: `https://tanhamazon.netlify.app/sitemap.xml`
-- Public verification: passed for 29 sitemap URLs on the currently deployed public site, but the 34-URL gate fails until Netlify is updated.
-- Public deployment currently points to an older Netlify Drop deploy; GitHub `main` is ahead of public.
-- Latest source has 34 sitemap URLs. Public Netlify still needs an updated deploy because `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` returned 404 on 2026-06-28.
-- Remaining external setup: connect Netlify to GitHub, verify the new live deploy, then complete Google Search Console.
+- Current stale public URL: `https://tanhamazon.netlify.app`
+- Target free Cloudflare URL: `https://tanhs-compact-kitchen.pages.dev` if available.
+- Target sitemap: `https://tanhs-compact-kitchen.pages.dev/sitemap.xml`
+- Public Netlify verification passed for 29 sitemap URLs on the stale host, but production target is now Cloudflare Pages.
+- Public Netlify deployment currently points to an older Netlify Drop deploy; GitHub `main` is ahead of public.
+- Latest source has 34 sitemap URLs targeting Cloudflare Pages. Cloudflare still needs first deploy before `/best/compact-rice-cookers-two-people/` and `/best/sink-organizers-small-kitchens/` are public.
+- Remaining external setup: create Cloudflare Pages project, deploy latest source, verify the new live deploy, then complete Google Search Console.
 
 ## Netlify deployment steps
 
@@ -76,22 +78,28 @@
 
 1. Create or log in to Cloudflare.
 2. Create a Pages project.
-3. Connect the Git repository.
-4. Use this build configuration:
+3. Try project name `tanhs-compact-kitchen`.
+4. Connect the Git repository or use Direct Upload.
+5. Use this build configuration:
    - Framework preset: None
    - Build command: empty
    - Build output directory: `site`
-5. Deploy.
-6. Copy the public URL.
-7. Update `site/robots.txt` and `site/sitemap.xml` to the final URL.
-8. Verify the live site.
+6. Run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\prepare-cloudflare-pages.ps1 -ProjectName "tanhs-compact-kitchen" -ContactEmail "dotuananh20082006@gmail.com"
+```
+
+7. Deploy.
+8. Copy the public URL.
+9. Verify the live site with the 34-URL public gate.
 
 ## After deployment
 
 - [x] Run `scripts/prepare-launch.ps1` with final URL and public contact email.
 - [x] Run `scripts/verify-static-site.ps1`.
-- [ ] Run `scripts/verify-public-site.ps1` with the 34-URL gate after Netlify deploys latest source.
-- [ ] Connect the existing Netlify project to GitHub and verify automatic deployment from `main`.
+- [ ] Run `scripts\verify-public-site.ps1` with the 34-URL gate after Cloudflare deploys latest source.
+- [ ] Use the Cloudflare URL for Search Console after public verification passes.
 - [ ] Add Search Console property for final URL.
 - [ ] Submit sitemap after public verification passes with 34 URLs.
 - [ ] Use `working/search_console_setup_packet.md` for first URL inspection batch.

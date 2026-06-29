@@ -3,7 +3,7 @@ param(
   [string]$ContentLogPath = 'working/tracking/content_log.csv',
   [string]$ContentInventoryPath = 'working/audits/content_inventory.csv',
   [string]$DefaultPlaceholderHost = 'tanhs-compact-kitchen.netlify.app',
-  [string]$PublicUrl = 'https://tanhamazon.netlify.app',
+  [string]$PublicUrl = 'https://tanhs-compact-kitchen.pages.dev',
   [int]$ExpectedPublicSitemapUrls = 0,
   [string]$RequiredPublicPathList = '',
   [switch]$CheckPublic

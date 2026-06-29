@@ -34,8 +34,8 @@ Last updated: 2026-06-28
 
 | Priority | Action | Owner | Status |
 | --- | --- | --- | --- |
-| P0 | Commit and push current source updates. | Codex | Done; GitHub `main` is ahead of public Netlify |
-| P0 | Deploy latest source to Netlify. | Owner/Codex if access exists | Pending external access; public sitemap still has 29 URLs |
+| P0 | Commit and push current source updates. | Codex | Done; source is prepared for Cloudflare Pages |
+| P0 | Deploy latest source to Cloudflare Pages. | Owner/Codex if access exists | Pending Cloudflare account/project access |
 | P0 | Verify public `/sitemap.xml` has 34 URLs. | Owner/Codex after deploy | Pending deploy; `launch-status -CheckPublic` currently reports `PublicDeployGatePassed=False` |
 | P0 | Set up Search Console and submit sitemap. | Owner | Pending Google access |
 | P1 | Run final affiliate readiness audit after public deploy. | Codex | Pending deploy |
@@ -44,7 +44,7 @@ Last updated: 2026-06-28
 
 ## Blockers
 
-- Netlify Git connection or ZIP upload needs owner account access if not already authenticated.
+- Cloudflare Pages project creation or Direct Upload needs owner account access if not already authenticated.
 - Google Search Console setup needs owner Google account access.
 - Amazon Associates application needs owner Amazon account/application access.
 - Affiliate links remain blocked until Amazon workflow and Task 16 are ready.

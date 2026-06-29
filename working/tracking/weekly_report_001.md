@@ -23,8 +23,8 @@
 - Local Git repository initialized.
 - Deploy ZIP created at `working/deploy/tanhs-compact-kitchen-site.zip`.
 - GitHub repository pushed to `https://github.com/Tanh2k8-123/Tanh-amazon`.
-- Public Netlify site launched at `https://tanhamazon.netlify.app`.
-- Public verification passed for 29 sitemap URLs.
+- Public Netlify site launched at `https://tanhamazon.netlify.app`, but that deploy is now stale.
+- Source is now prepared for Cloudflare Pages at `https://tanhs-compact-kitchen.pages.dev`.
 - Search Console day 0 checklist created and indexing tracker expanded to all 29 public URLs.
 - Money-page evidence SOP, pipeline, and evidence tracker created for the first 5 buyer-intent pages.
 
@@ -52,8 +52,8 @@ Reason: Amazon Associates has not been applied for yet. This is intentional unti
 - Static-first architecture fits the zero-budget constraint.
 - Informational content avoids thin affiliate risk before product evidence exists.
 - Local QA found and fixed responsive table overflow.
-- Netlify/GitHub deployment now works with the zero-budget constraint.
-- Public verification caught and confirmed sitemap, robots, contact, and disclosure basics.
+- Netlify/GitHub deployment worked initially, but Netlify deploy credit is now blocked.
+- Cloudflare Pages is the next zero-budget deployment path.
 
 ## What did not work yet
 
@@ -63,7 +63,8 @@ Reason: Amazon Associates has not been applied for yet. This is intentional unti
 
 ## Next week priorities
 
-1. Create Search Console URL-prefix property for `https://tanhamazon.netlify.app/`.
-2. Submit `https://tanhamazon.netlify.app/sitemap.xml`.
-3. Inspect P0 URLs and update `working/tracking/indexing_tracker.csv`.
-4. Research product evidence for compact air fryer, dish rack, and small coffee maker best-list pages.
+1. Deploy Cloudflare Pages at `https://tanhs-compact-kitchen.pages.dev`.
+2. Create Search Console URL-prefix property for `https://tanhs-compact-kitchen.pages.dev/`.
+3. Submit `https://tanhs-compact-kitchen.pages.dev/sitemap.xml`.
+4. Inspect P0 URLs and update `working/tracking/indexing_tracker.csv`.
+5. Research product evidence for compact air fryer, dish rack, and small coffee maker best-list pages.
